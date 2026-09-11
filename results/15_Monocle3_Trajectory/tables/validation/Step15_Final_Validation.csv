@@ -1,0 +1,16 @@
+"Check","Status"
+"Input_Seurat_Object",TRUE
+"RNA_Counts_Available",TRUE
+"UMAP_Available",TRUE
+"Monocle3_CDS_Created",TRUE
+"Partition_Inference",TRUE
+"Selected_Mixed_Partition",TRUE
+"Normal_like_Root_Selected",TRUE
+"Finite_Pseudotime_Exists",TRUE
+"Finite_Normal_like_Pseudotime_Exists",TRUE
+"Finite_Tumor_like_Pseudotime_Exists",TRUE
+"Wilcoxon_Test_Completed",TRUE
+"Seurat_Pseudotime_Transfer",TRUE
+"Updated_Seurat_Object_Saved",TRUE
+"Monocle3_CDS_Saved",TRUE
+"Output_Files_Validated",TRUE

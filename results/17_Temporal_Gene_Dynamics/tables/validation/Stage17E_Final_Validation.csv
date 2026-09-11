@@ -1,0 +1,21 @@
+Check,Result,Details
+Stage17D RDS exists,TRUE,C:/Users/asus/Desktop/TNBC_BRCA1_SingleCell/objects/Stage17D_Biological_Interpretation_Results.rds
+Stage17D cluster gene lists available,TRUE,"1, 2"
+Stage17D reports upstream frozen,TRUE,TRUE
+No trajectory reconstruction reported,TRUE,FALSE
+No root selection reported,TRUE,FALSE
+No pseudotime recalculation reported,TRUE,FALSE
+Total temporal genes = 569,TRUE,Observed: 569
+Cluster 1 contains 53 genes,TRUE,Observed: 53
+Cluster 2 contains 516 genes,TRUE,Observed: 516
+RNA assay available,TRUE,RNA assay detected
+RNA background features reconstructed,TRUE,Observed: 24865 | Stage17D: 24865
+Current Entrez background reconstructed,TRUE,Observed: 18813 | Stage17D: 18815
+Background discrepancy documented,TRUE,Difference: -2 | Percent: -0.01063
+Temporal mapping QC completed,TRUE,QC clusters: 2
+No duplicated Entrez IDs after SYMBOL-level mapping,TRUE,Count: 0
+Temporal Cluster 1 Entrez mapping available,TRUE,Mapped Entrez: 53
+Temporal Cluster 2 Entrez mapping available,TRUE,Mapped Entrez: 497
+Reactome analysis completed,TRUE,Summary rows: 2
+MSigDB Hallmark database retrieved,TRUE,Gene sets: 50
+Hallmark analysis completed,TRUE,Summary rows: 2

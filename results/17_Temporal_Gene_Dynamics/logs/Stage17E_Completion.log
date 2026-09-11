@@ -1,0 +1,101 @@
+============================================================
+STAGE 17E: REACTOME + MSIGDB HALLMARK VALIDATION
+============================================================
+Started: 2026-09-11 11:26:19.704855
+Required packages available.
+Loading frozen Stage17D results...
+Stage17D RDS loaded successfully.
+Stage17D frozen-status checks passed.
+Canonical temporal gene counts:
+Cluster 1 = 53
+Cluster 2 = 516
+Total = 569
+Seurat source:
+C:/Users/asus/Desktop/TNBC_SingleCell_Pipeline/objects/TNBC_Epithelial_CopyKAT.rds
+Loading Seurat expression object...
+RNA feature count = 24865
+Mapping RNA background SYMBOLs to Entrez IDs...
+Current reconstructed Entrez background = 18813
+============================================================
+STAGE17E BACKGROUND MAPPING QC
+============================================================
+RNA features = 24865
+Mapped SYMBOLs = 18813
+Mapped Entrez IDs = 18815
+Unmapped RNA features = 6052
+Background mapping rate (%) = 75.66
+First 100 unmapped RNA features:
+AL627309.1, AL669831.5, AL645608.3, AL645608.1, AL645608.8, AL390719.2, AL162741.1, AL391244.3, AL645728.1, AL691432.2, FO704657.1, AL109917.1, AL391845.2, AL590822.2, AL139246.5, AL139246.3, FAM213B, AL831784.1, AL512413.1, AL513320.1, AL805961.2, Z98259.3, AL031847.1, LINC00337, AL031848.2, AL359881.2, AL359881.1, AL034417.4, AL034417.3, AL034417.2, LINC01759, AL139424.3, AL139424.2, AL139424.1, AL109811.3, AL109811.1, AL109811.2, AL031731.1, AC254633.1, AL121992.1, AL450998.2, AL137802.2, AL137802.1, BX284668.2, BX284668.5, BX284668.6, AL035413.1, PQLC2, MINOS1, Z98257.1, UBXN10-AS1, AL031728.1, AL031281.2, AL109936.6, AL109936.2, AL021154.1, AL445686.2, AL445471.2, AL031432.3, AL606491.1, AL031280.1, AL020996.1, AL512408.1, AL353622.1, LINC01715, AL360012.1, AL354919.1, AL136115.2, AL445248.1, AL049795.1, KIAA1522, YARS, AL662907.3, AL513327.1, AL513327.2, AC114490.3, AC114490.2, AC004865.2, AL138787.2, ADPRHL2, AL591845.1, LINC01137, C1orf109, AL139158.2, AL139260.1, AL033527.3, AL033527.5, AL050341.2, AL603839.3, AC119677.1, AC093151.3, AC098484.2, AL512353.1, SLC2A1-AS1, AL139289.2, AL357079.1, AL139220.2, AL592166.1, TCTEX1D4, AL358075.1
+============================================================
+TEMPORAL GENE MAPPING QC
+============================================================
+Cluster 1
+Input genes = 53
+Mapped to Entrez = 53
+Unmapped = 0
+Mapping rate (%) = 100
+Cluster 2
+Input genes = 516
+Mapped to Entrez = 497
+Unmapped = 19
+Mapping rate (%) = 96.32
+Unmapped genes:
+SLC9A3R1, C1orf43, HSPB11, ASNA1, TSTA3, TCTEX1D2, NCBP2-AS2, WRB, C6orf48, FAM213A, H3F3A, FAM84A, NDUFA4L2, C19orf48, HSPA14.1, AC020916.1, AL139393.2, AC011503.1, KIAA1324
+Mapping QC table exported:
+C:/Users/asus/Desktop/TNBC_BRCA1_SingleCell/results/17_Temporal_Gene_Dynamics/tables/validation/Stage17E_Mapping_QC.csv
+End of mapping QC.
+Stage17D reported Entrez background = 18815
+Current reconstructed Entrez background = 18813
+Entrez background difference = -2
+Entrez background difference (%) = -0.01063
+Annotation reproducibility discrepancy detected.
+The discrepancy is documented and not artificially corrected.
+Duplicated Entrez IDs after SYMBOL-level deduplication = 0
+Entrez IDs associated with multiple SYMBOLs = 0
+Temporal mapping from canonical background mapping: Cluster 1 = 53 mapped SYMBOLs / 53 input genes
+Temporal mapping from canonical background mapping: Cluster 2 = 497 mapped SYMBOLs / 516 input genes
+Temporal gene mapping completed using the canonical background mapping.
+============================================================
+REACTOME ENRICHMENT
+============================================================
+Reactome Cluster 1: 53 input genes
+Reactome Cluster 2: 516 input genes
+============================================================
+MSIGDB HALLMARK
+============================================================
+Hallmark database retrieved using:
+msigdbr(db_species='HS', species='Homo sapiens', collection='H')
+Hallmark gene sets = 50
+Unique Hallmark genes = 4384
+Hallmark background genes = 4226
+Hallmark Cluster 1: 53 input genes
+Hallmark Cluster 2: 516 input genes
+============================================================
+STAGE 17E COMPLETED SUCCESSFULLY
+============================================================
+Temporal genes: 569
+Cluster 1 genes: 53
+Cluster 2 genes: 516
+Cluster 1 Entrez genes: 53
+Cluster 2 Entrez genes: 497
+Stage17D background Entrez: 18815
+Current background Entrez: 18813
+Background difference: -2
+Background mapping rate (%): 75.66
+Reactome significant pathways: 413
+Hallmark significant pathways: 10
+Hallmark gene sets: 50
+Hallmark background genes: 4226
+Canonical RDS:
+C:/Users/asus/Desktop/TNBC_BRCA1_SingleCell/objects/Stage17E_Reactome_Hallmark_Results.rds
+Completion log:
+C:/Users/asus/Desktop/TNBC_BRCA1_SingleCell/results/17_Temporal_Gene_Dynamics/logs/Stage17E_Completion.log
+Stage17B remained frozen.
+Stage17C remained frozen.
+Stage17D remained frozen.
+No trajectory reconstruction was performed.
+No root selection was performed.
+No pseudotime recalculation was performed.
+No temporal gene subsetting was performed.
+Stage17E finished: 2026-09-11 11:33:43.038285
+============================================================

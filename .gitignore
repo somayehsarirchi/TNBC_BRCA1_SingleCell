@@ -1,0 +1,108 @@
+# ==========================================================
+# TNBC BRCA1 Single-Cell Project
+# Git Ignore Configuration
+# ==========================================================
+
+# ----------------------------------------------------------
+# R / RStudio
+# ----------------------------------------------------------
+.Rhistory
+.RData
+.Ruserdata
+.Rproj.user/
+
+# ----------------------------------------------------------
+# Local R environment files
+# ----------------------------------------------------------
+.Renviron
+.Rprofile
+.env
+
+# ----------------------------------------------------------
+# IDE / operating-system files
+# ----------------------------------------------------------
+.vscode/
+.idea/
+.DS_Store
+Thumbs.db
+
+# ----------------------------------------------------------
+# Raw sequencing / expression data
+# ----------------------------------------------------------
+data/raw/*
+!data/raw/README.md
+!data/raw/.gitkeep
+
+data/processed/*
+!data/processed/README.md
+!data/processed/.gitkeep
+
+# ----------------------------------------------------------
+# Large biological analysis objects
+# ----------------------------------------------------------
+*.rds
+*.RDS
+*.h5
+*.h5ad
+*.loom
+*.mtx
+*.gz
+*.zip
+*.tar
+*.tar.gz
+
+# ----------------------------------------------------------
+# Large generated files
+# ----------------------------------------------------------
+*.bigWig
+*.bam
+*.bai
+
+# ----------------------------------------------------------
+# Temporary analysis files
+# ----------------------------------------------------------
+*.tmp
+*.temp
+*.bak
+*.old
+*~
+
+# ----------------------------------------------------------
+# Local/private/scratch directories
+# ----------------------------------------------------------
+local/
+private/
+scratch/
+
+# ----------------------------------------------------------
+# CopyKAT batch internals
+results/07_CopyKAT_Batch_Inference/batch_*
+results/07_CopyKAT_Batch_Inference/**/batch_*
+!results/07_CopyKAT_Batch_Inference/tables/validation/batch_info.csv
+
+
+# Local log files
+# ----------------------------------------------------------
+*.log
+!results/**/logs/*.log
+
+# ----------------------------------------------------------
+# End of .gitignore
+# ----------------------------------------------------------
+
+# ----------------------------------------------------------
+# Internal / archived scripts not part of the public pipeline
+# ----------------------------------------------------------
+scripts/16D_Functional_Enrichment_TrajectoryAssociatedGenes_ARCHIVED.R
+scripts/17-audit.R
+
+# ----------------------------------------------------------
+# Internal audit / curation documentation
+# Keep only the public documentation files listed below
+# ----------------------------------------------------------
+docs/*
+!docs/DATA_AVAILABILITY.md
+!docs/METHODS.md
+!docs/REPRODUCIBILITY.md
+!docs/FINAL_REPOSITORY_SUMMARY.csv
+!docs/FINAL_REPOSITORY_SUMMARY.txt

@@ -1,0 +1,69 @@
+STAGE 17 FINAL BIOLOGICAL SUMMARY
+=================================
+
+Stage17 integrates trajectory-associated temporal
+gene-expression dynamics with GO Biological Process,
+KEGG, Reactome and MSigDB Hallmark enrichment.
+
+Temporal clusters represent gene-expression dynamics
+along inferred pseudotime and should NOT be interpreted
+as independent cell subtypes or direct evidence of
+cell-state conversion.
+
+Total temporal genes: 569
+Temporal clusters: 2
+Cluster 1 genes: 53
+Cluster 2 genes: 516
+GO pathways: 4957
+KEGG pathways: 0
+Reactome pathways: 413
+Hallmark pathways: 10
+Integrated significant pathways: 698
+Biological themes: 11
+Themes supported by at least two databases: 13
+
+Cluster 1
+-------------------------
+Gene count: 53
+Temporal pattern: Early_Peaking_Decreasing
+Temporal direction: Early-peaking program with subsequent attenuation
+
+Integrated interpretation:
+An early-peaking temporal gene-expression program is followed by attenuation along the inferred pseudotime. Multi-database enrichment supports antigen processing and presentation, MHC-associated immune functions and immune-related processes, together with mitochondrial respiratory activity. This pattern describes a trajectory-associated transcriptional program and does not establish a transition from an immune cell state to another cell type.
+
+GO themes: Mitochondrial / oxidative energy metabolism; Immune / antigen-presentation / inflammatory processes; Other biological processes; Cell adhesion / extracellular interactions; Protein synthesis / translational processes; Cellular stress / hypoxia / redox; Metabolic processes; DNA damage / repair / checkpoint; Cell cycle / proliferation
+KEGG themes: NA
+Reactome themes: Protein synthesis / translational processes; Mitochondrial / oxidative energy metabolism; Immune / antigen-presentation / inflammatory processes; Metabolic processes; Other biological processes; Cellular stress / hypoxia / redox; Growth / MYC / mTOR signaling; Cell adhesion / extracellular interactions; Cell death / apoptosis; DNA damage / repair / checkpoint
+Hallmark themes: Immune / antigen-presentation / inflammatory processes; Other biological processes
+
+Cluster 2
+-------------------------
+Gene count: 516
+Temporal pattern: Late_Increasing
+Temporal direction: Late-emerging program with increasing expression
+
+Integrated interpretation:
+A broad late-emerging temporal gene-expression program increases toward later pseudotime. Enrichment is dominated by protein synthesis, translation-related processes and mitochondrial oxidative energy metabolism, with additional growth, stress or cell-cycle-associated signals where supported by the enrichment results. The temporal gene composition also contains epithelial-associated genes, but the enrichment results do not by themselves establish a distinct epithelial cell-state transition.
+
+GO themes: Protein synthesis / translational processes; Mitochondrial / oxidative energy metabolism; Other biological processes; Metabolic processes
+KEGG themes: NA
+Reactome themes: Protein synthesis / translational processes; Other biological processes; Metabolic processes; Cellular stress / hypoxia / redox; Immune / antigen-presentation / inflammatory processes; Cell cycle / proliferation; Mitochondrial / oxidative energy metabolism; DNA damage / repair / checkpoint; Cell death / apoptosis; Cell adhesion / extracellular interactions; Growth / MYC / mTOR signaling
+Hallmark themes: Other biological processes; Growth / MYC / mTOR signaling
+
+Scientific caution:
+These results identify transcriptional programs
+associated with inferred pseudotime.
+They do not establish causality or direct biological
+conversion between cell states or cell types.
+
+Cross-database recurrence indicates concordance of
+annotations across databases but does not imply that
+the databases are statistically independent.
+
+Reactome pathway counts should not be interpreted as
+a direct measure of biological activity because
+pathway sizes and hierarchical redundancy differ.
+
+Viral-related pathway annotations should not be
+interpreted as evidence of viral infection without
+independent experimental evidence.

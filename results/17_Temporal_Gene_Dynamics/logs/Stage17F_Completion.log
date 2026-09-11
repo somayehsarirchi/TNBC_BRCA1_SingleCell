@@ -1,0 +1,35 @@
+[2026-09-11 11:52:24] Stage17F final integration started.
+[2026-09-11 11:52:24] Stage17F is the final Stage17 step: integration, validation, export and archiving.
+[2026-09-11 11:52:30] Frozen Stage17C, Stage17D and Stage17E RDS files were found.
+[2026-09-11 11:52:32] Stage17C RDS loaded.
+[2026-09-11 11:52:33] Stage17D RDS loaded.
+[2026-09-11 11:52:33] Stage17E RDS loaded.
+[2026-09-11 11:52:34] Stage17C, Stage17D and Stage17E top-level structures validated.
+[2026-09-11 11:52:36] Stage identifiers validated.
+[2026-09-11 11:53:28] Required Stage17C, Stage17D and Stage17E fields validated.
+[2026-09-11 11:53:34] Temporal clusters: 1, 2
+[2026-09-11 11:53:35] Total temporal genes: 569
+[2026-09-11 11:53:37] Canonical temporal gene counts validated: 53 + 516 = 569.
+[2026-09-11 11:53:39] No duplicated genes were detected across temporal clusters.
+[2026-09-11 11:53:50] Cluster 1 pattern validated as Early_Peaking_Decreasing.
+[2026-09-11 11:53:50] Cluster 2 pattern validated as Late_Increasing.
+[2026-09-11 11:54:05] GO BP pathways preserved: 4957
+[2026-09-11 11:54:28] KEGG pathways preserved: 0
+[2026-09-11 11:54:31] Reactome pathways preserved: 413
+[2026-09-11 11:55:05] Hallmark pathways preserved: 10
+[2026-09-11 11:55:07] Combined enrichment rows: 5380
+[2026-09-11 11:58:14] Final canonical Stage17F RDS saved: C:/Users/asus/Desktop/TNBC_BRCA1_SingleCell/objects/Stage17F_Temporal_Gene_Dynamics_Final.rds
+[2026-09-11 11:58:32] Temporal genes: 569
+[2026-09-11 11:58:33] Cluster 1 genes: 53
+[2026-09-11 11:58:34] Cluster 2 genes: 516
+[2026-09-11 11:58:35] GO pathways: 4957
+[2026-09-11 11:58:35] KEGG pathways: 0
+[2026-09-11 11:58:36] Reactome pathways: 413
+[2026-09-11 11:58:37] Hallmark pathways: 10
+[2026-09-11 11:58:37] Integrated significant pathways: 698
+[2026-09-11 11:58:38] Biological themes: 11
+[2026-09-11 11:58:38] Themes supported by at least two databases: 13
+[2026-09-11 11:58:39] Final RDS integrity: PASS
+[2026-09-11 11:58:39] Runtime: 6.092 minutes
+[2026-09-11 11:58:40] No upstream Stage17 analysis was rerun.
+[2026-09-11 11:58:43] Stage17F completed successfully.

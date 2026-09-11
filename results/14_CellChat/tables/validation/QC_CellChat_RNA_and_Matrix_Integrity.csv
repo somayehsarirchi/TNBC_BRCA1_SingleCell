@@ -1,0 +1,3 @@
+"Group","RNA_Layers","Expression_Rows","Expression_Columns","CellChat_Data_Rows","CellChat_Data_Columns","Count_Matrix_NA","Weight_Matrix_NA"
+"TotalCell","counts.1;data.1;scale.data.1;counts;data;scale.data",22106,20698,22106,20698,0,0
+"BRCA1_tumour","counts.2;data.2;scale.data.2;counts;data;scale.data",24317,32324,24317,32324,0,0

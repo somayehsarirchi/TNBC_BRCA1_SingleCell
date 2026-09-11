@@ -1,0 +1,632 @@
+nohup: ignoring input
+2026-08-14 20:17:40 | Starting CopyKAT batch script
+2026-08-14 20:17:40 | Base directory: /home/star/Documents/CopyKAT
+2026-08-14 20:17:40 | Input RDS: /home/star/Documents/CopyKAT/copykat_inputs.rds
+2026-08-14 20:17:40 | Output directory: /home/star/Documents/CopyKAT/copykat_batches
+2026-08-14 20:17:40 | Final output directory: /home/star/Documents/CopyKAT/copykat_final
+2026-08-14 20:17:40 | Target batch size: 2500
+2026-08-14 20:17:40 | Random seed: 1234
+2026-08-14 20:17:40 | Saving sessionInfo
+2026-08-14 20:17:40 | Loading input RDS
+2026-08-14 20:17:42 | Found normal_cells in input RDS: 26569
+2026-08-14 20:17:42 | Input is a list. Names: matrix, normal_cells
+2026-08-14 20:17:42 | Using list element as raw counts matrix: matrix
+            used  (Mb) gc trigger   (Mb)  max used  (Mb)
+Ncells   1529490  81.7    2493330  133.2   2311478 123.5
+Vcells 113312906 864.6  165712162 1264.3 113569978 866.5
+2026-08-14 20:17:43 | Counts class: dgCMatrix
+2026-08-14 20:17:43 | Counts dimensions: 24865 genes x 48531 cells
+2026-08-14 20:17:43 | Raw-count validation passed
+2026-08-14 20:17:43 | Filtering empty/low-quality genes and cells
+2026-08-14 20:17:44 | Cells before filtering: 48531
+2026-08-14 20:17:44 | Cells after filtering: 48531
+2026-08-14 20:17:44 | Genes before filtering: 24865
+2026-08-14 20:17:44 | Genes after filtering: 23546
+            used  (Mb) gc trigger   (Mb)  max used   (Mb)
+Ncells   1540142  82.3    2493330  133.2   2311478  123.5
+Vcells 113432716 865.5  326222124 2488.9 224000775 1709.0
+2026-08-14 20:17:44 | Normal cells matching filtered counts matrix: 26569
+2026-08-14 20:17:44 | Total cells for CopyKAT: 48531
+2026-08-14 20:17:44 | Number of batches: 20
+2026-08-14 20:17:44 | Saved: /home/star/Documents/CopyKAT/copykat_final/copykat_run_parameters.rds
+2026-08-14 20:17:44 | Preparing batch 1 of 20
+2026-08-14 20:17:44 | Running CopyKAT for batch 1
+2026-08-14 20:17:44 | Batch cells: 2500
+2026-08-14 20:17:44 | Batch genes: 23546
+2026-08-14 20:17:44 | Batch normal cells: 80
+2026-08-14 20:17:44 | Batch matrix class before dense conversion: dgCMatrix
+2026-08-14 20:17:45 | Batch matrix class after dense conversion: matrix, array
+2026-08-14 20:17:45 | Dense matrix size: 0.4 Gb
+[1] "running copykat v1.2.5"
+[1] "step1: read and filter data ..."
+[1] "23546 genes, 2500 cells in raw data"
+[1] "9093 genes past LOW.DR filtering"
+[1] "step 2: annotations gene coordinates ..."
+[1] "start annotation ..."
+[1] "step 3: smoothing data with dlm ..."
+[1] "step 4: measuring baselines ..."
+[1] "20 known normal cells found in dataset"
+[1] "run with known normal..."
+[1] "baseline is from known input"
+[1] "step 5: segmentation..."
+[1] "step 6: convert to genomic bins..."
+[1] "step 7: re-adjust baseline ..."
+[1] "step 8: final prediction ..."
+[1] "step 9: saving results..."
+[1] "step 10: ploting heatmap ..."
+Time difference of 6.637174 mins
+2026-08-14 20:24:24 | Saved: /home/star/Documents/CopyKAT/copykat_batches/batch_1/copykat_result_batch_1.rds
+2026-08-14 20:24:24 | Saved prediction CSV for batch 1
+2026-08-14 20:24:24 | Finished batch 1
+2026-08-14 20:24:25 | Preparing batch 2 of 20
+2026-08-14 20:24:25 | Running CopyKAT for batch 2
+2026-08-14 20:24:25 | Batch cells: 2500
+2026-08-14 20:24:25 | Batch genes: 23546
+2026-08-14 20:24:25 | Batch normal cells: 71
+2026-08-14 20:24:25 | Batch matrix class before dense conversion: dgCMatrix
+2026-08-14 20:24:25 | Batch matrix class after dense conversion: matrix, array
+2026-08-14 20:24:25 | Dense matrix size: 0.4 Gb
+[1] "running copykat v1.2.5"
+[1] "step1: read and filter data ..."
+[1] "23546 genes, 2500 cells in raw data"
+[1] "9164 genes past LOW.DR filtering"
+[1] "step 2: annotations gene coordinates ..."
+[1] "start annotation ..."
+[1] "step 3: smoothing data with dlm ..."
+[1] "step 4: measuring baselines ..."
+[1] "30 known normal cells found in dataset"
+[1] "run with known normal..."
+[1] "baseline is from known input"
+[1] "step 5: segmentation..."
+[1] "step 6: convert to genomic bins..."
+[1] "step 7: re-adjust baseline ..."
+[1] "step 8: final prediction ..."
+[1] "step 9: saving results..."
+[1] "step 10: ploting heatmap ..."
+Time difference of 6.782222 mins
+2026-08-14 20:31:13 | Saved: /home/star/Documents/CopyKAT/copykat_batches/batch_2/copykat_result_batch_2.rds
+2026-08-14 20:31:13 | Saved prediction CSV for batch 2
+2026-08-14 20:31:13 | Finished batch 2
+2026-08-14 20:31:13 | Preparing batch 3 of 20
+2026-08-14 20:31:13 | Running CopyKAT for batch 3
+2026-08-14 20:31:13 | Batch cells: 2500
+2026-08-14 20:31:13 | Batch genes: 23546
+2026-08-14 20:31:13 | Batch normal cells: 2038
+2026-08-14 20:31:13 | Batch matrix class before dense conversion: dgCMatrix
+2026-08-14 20:31:14 | Batch matrix class after dense conversion: matrix, array
+2026-08-14 20:31:14 | Dense matrix size: 0.4 Gb
+[1] "running copykat v1.2.5"
+[1] "step1: read and filter data ..."
+[1] "23546 genes, 2500 cells in raw data"
+[1] "6973 genes past LOW.DR filtering"
+[1] "WARNING: low data quality; assigned LOW.DR to UP.DR..."
+[1] "step 2: annotations gene coordinates ..."
+[1] "start annotation ..."
+[1] "step 3: smoothing data with dlm ..."
+[1] "step 4: measuring baselines ..."
+[1] "1192 known normal cells found in dataset"
+[1] "run with known normal..."
+[1] "baseline is from known input"
+[1] "step 5: segmentation..."
+[1] "step 6: convert to genomic bins..."
+[1] "step 7: re-adjust baseline ..."
+[1] "step 8: final prediction ..."
+[1] "step 9: saving results..."
+[1] "step 10: ploting heatmap ..."
+Time difference of 3.469642 mins
+2026-08-14 20:34:43 | Saved: /home/star/Documents/CopyKAT/copykat_batches/batch_3/copykat_result_batch_3.rds
+2026-08-14 20:34:43 | Saved prediction CSV for batch 3
+2026-08-14 20:34:43 | Finished batch 3
+2026-08-14 20:34:43 | Preparing batch 4 of 20
+2026-08-14 20:34:43 | Running CopyKAT for batch 4
+2026-08-14 20:34:43 | Batch cells: 2500
+2026-08-14 20:34:43 | Batch genes: 23546
+2026-08-14 20:34:43 | Batch normal cells: 2069
+2026-08-14 20:34:43 | Batch matrix class before dense conversion: dgCMatrix
+2026-08-14 20:34:43 | Batch matrix class after dense conversion: matrix, array
+2026-08-14 20:34:43 | Dense matrix size: 0.4 Gb
+[1] "running copykat v1.2.5"
+[1] "step1: read and filter data ..."
+[1] "23546 genes, 2500 cells in raw data"
+[1] "6644 genes past LOW.DR filtering"
+[1] "WARNING: low data quality; assigned LOW.DR to UP.DR..."
+[1] "step 2: annotations gene coordinates ..."
+[1] "start annotation ..."
+[1] "step 3: smoothing data with dlm ..."
+[1] "step 4: measuring baselines ..."
+[1] "1200 known normal cells found in dataset"
+[1] "run with known normal..."
+[1] "baseline is from known input"
+[1] "step 5: segmentation..."
+[1] "step 6: convert to genomic bins..."
+[1] "step 7: re-adjust baseline ..."
+[1] "step 8: final prediction ..."
+[1] "step 9: saving results..."
+[1] "step 10: ploting heatmap ..."
+Time difference of 3.303981 mins
+2026-08-14 20:38:02 | Saved: /home/star/Documents/CopyKAT/copykat_batches/batch_4/copykat_result_batch_4.rds
+2026-08-14 20:38:02 | Saved prediction CSV for batch 4
+2026-08-14 20:38:03 | Finished batch 4
+2026-08-14 20:38:03 | Preparing batch 5 of 20
+2026-08-14 20:38:03 | Running CopyKAT for batch 5
+2026-08-14 20:38:03 | Batch cells: 2500
+2026-08-14 20:38:03 | Batch genes: 23546
+2026-08-14 20:38:03 | Batch normal cells: 2370
+2026-08-14 20:38:03 | Batch matrix class before dense conversion: dgCMatrix
+2026-08-14 20:38:03 | Batch matrix class after dense conversion: matrix, array
+2026-08-14 20:38:03 | Dense matrix size: 0.4 Gb
+[1] "running copykat v1.2.5"
+[1] "step1: read and filter data ..."
+[1] "23546 genes, 2500 cells in raw data"
+[1] "5536 genes past LOW.DR filtering"
+[1] "WARNING: low data quality; assigned LOW.DR to UP.DR..."
+[1] "step 2: annotations gene coordinates ..."
+[1] "start annotation ..."
+[1] "step 3: smoothing data with dlm ..."
+[1] "step 4: measuring baselines ..."
+[1] "1290 known normal cells found in dataset"
+[1] "run with known normal..."
+[1] "baseline is from known input"
+[1] "step 5: segmentation..."
+[1] "step 6: convert to genomic bins..."
+[1] "step 7: re-adjust baseline ..."
+[1] "step 8: final prediction ..."
+[1] "step 9: saving results..."
+[1] "step 10: ploting heatmap ..."
+Time difference of 2.708669 mins
+2026-08-14 20:40:46 | Saved: /home/star/Documents/CopyKAT/copykat_batches/batch_5/copykat_result_batch_5.rds
+2026-08-14 20:40:46 | Saved prediction CSV for batch 5
+2026-08-14 20:40:47 | Finished batch 5
+2026-08-14 20:40:47 | Preparing batch 6 of 20
+2026-08-14 20:40:47 | Running CopyKAT for batch 6
+2026-08-14 20:40:47 | Batch cells: 2500
+2026-08-14 20:40:47 | Batch genes: 23546
+2026-08-14 20:40:47 | Batch normal cells: 2408
+2026-08-14 20:40:47 | Batch matrix class before dense conversion: dgCMatrix
+2026-08-14 20:40:47 | Batch matrix class after dense conversion: matrix, array
+2026-08-14 20:40:47 | Dense matrix size: 0.4 Gb
+[1] "running copykat v1.2.5"
+[1] "step1: read and filter data ..."
+[1] "23546 genes, 2500 cells in raw data"
+[1] "5283 genes past LOW.DR filtering"
+[1] "WARNING: low data quality; assigned LOW.DR to UP.DR..."
+[1] "step 2: annotations gene coordinates ..."
+[1] "start annotation ..."
+[1] "step 3: smoothing data with dlm ..."
+[1] "step 4: measuring baselines ..."
+[1] "1309 known normal cells found in dataset"
+[1] "run with known normal..."
+[1] "baseline is from known input"
+[1] "step 5: segmentation..."
+[1] "step 6: convert to genomic bins..."
+[1] "step 7: re-adjust baseline ..."
+[1] "step 8: final prediction ..."
+[1] "step 9: saving results..."
+[1] "step 10: ploting heatmap ..."
+Time difference of 2.581903 mins
+2026-08-14 20:43:23 | Saved: /home/star/Documents/CopyKAT/copykat_batches/batch_6/copykat_result_batch_6.rds
+2026-08-14 20:43:23 | Saved prediction CSV for batch 6
+2026-08-14 20:43:23 | Finished batch 6
+2026-08-14 20:43:23 | Preparing batch 7 of 20
+2026-08-14 20:43:23 | Running CopyKAT for batch 7
+2026-08-14 20:43:23 | Batch cells: 2500
+2026-08-14 20:43:23 | Batch genes: 23546
+2026-08-14 20:43:23 | Batch normal cells: 2414
+2026-08-14 20:43:23 | Batch matrix class before dense conversion: dgCMatrix
+2026-08-14 20:43:23 | Batch matrix class after dense conversion: matrix, array
+2026-08-14 20:43:23 | Dense matrix size: 0.4 Gb
+[1] "running copykat v1.2.5"
+[1] "step1: read and filter data ..."
+[1] "23546 genes, 2500 cells in raw data"
+[1] "5365 genes past LOW.DR filtering"
+[1] "WARNING: low data quality; assigned LOW.DR to UP.DR..."
+[1] "step 2: annotations gene coordinates ..."
+[1] "start annotation ..."
+[1] "step 3: smoothing data with dlm ..."
+[1] "step 4: measuring baselines ..."
+[1] "1384 known normal cells found in dataset"
+[1] "run with known normal..."
+[1] "baseline is from known input"
+[1] "step 5: segmentation..."
+[1] "step 6: convert to genomic bins..."
+[1] "step 7: re-adjust baseline ..."
+[1] "step 8: final prediction ..."
+[1] "step 9: saving results..."
+[1] "step 10: ploting heatmap ..."
+Time difference of 2.779274 mins
+2026-08-14 20:46:11 | Saved: /home/star/Documents/CopyKAT/copykat_batches/batch_7/copykat_result_batch_7.rds
+2026-08-14 20:46:11 | Saved prediction CSV for batch 7
+2026-08-14 20:46:11 | Finished batch 7
+2026-08-14 20:46:11 | Preparing batch 8 of 20
+2026-08-14 20:46:11 | Running CopyKAT for batch 8
+2026-08-14 20:46:11 | Batch cells: 2500
+2026-08-14 20:46:11 | Batch genes: 23546
+2026-08-14 20:46:11 | Batch normal cells: 2401
+2026-08-14 20:46:11 | Batch matrix class before dense conversion: dgCMatrix
+2026-08-14 20:46:11 | Batch matrix class after dense conversion: matrix, array
+2026-08-14 20:46:11 | Dense matrix size: 0.4 Gb
+[1] "running copykat v1.2.5"
+[1] "step1: read and filter data ..."
+[1] "23546 genes, 2500 cells in raw data"
+[1] "5302 genes past LOW.DR filtering"
+[1] "WARNING: low data quality; assigned LOW.DR to UP.DR..."
+[1] "step 2: annotations gene coordinates ..."
+[1] "start annotation ..."
+[1] "step 3: smoothing data with dlm ..."
+[1] "step 4: measuring baselines ..."
+[1] "1335 known normal cells found in dataset"
+[1] "run with known normal..."
+[1] "baseline is from known input"
+[1] "step 5: segmentation..."
+[1] "step 6: convert to genomic bins..."
+[1] "step 7: re-adjust baseline ..."
+[1] "step 8: final prediction ..."
+[1] "step 9: saving results..."
+[1] "step 10: ploting heatmap ..."
+Time difference of 2.650268 mins
+2026-08-14 20:48:51 | Saved: /home/star/Documents/CopyKAT/copykat_batches/batch_8/copykat_result_batch_8.rds
+2026-08-14 20:48:51 | Saved prediction CSV for batch 8
+2026-08-14 20:48:51 | Finished batch 8
+2026-08-14 20:48:52 | Preparing batch 9 of 20
+2026-08-14 20:48:52 | Running CopyKAT for batch 9
+2026-08-14 20:48:52 | Batch cells: 2500
+2026-08-14 20:48:52 | Batch genes: 23546
+2026-08-14 20:48:52 | Batch normal cells: 2401
+2026-08-14 20:48:52 | Batch matrix class before dense conversion: dgCMatrix
+2026-08-14 20:48:52 | Batch matrix class after dense conversion: matrix, array
+2026-08-14 20:48:52 | Dense matrix size: 0.4 Gb
+[1] "running copykat v1.2.5"
+[1] "step1: read and filter data ..."
+[1] "23546 genes, 2500 cells in raw data"
+[1] "5236 genes past LOW.DR filtering"
+[1] "WARNING: low data quality; assigned LOW.DR to UP.DR..."
+[1] "step 2: annotations gene coordinates ..."
+[1] "start annotation ..."
+[1] "step 3: smoothing data with dlm ..."
+[1] "step 4: measuring baselines ..."
+[1] "1272 known normal cells found in dataset"
+[1] "run with known normal..."
+[1] "baseline is from known input"
+[1] "step 5: segmentation..."
+[1] "step 6: convert to genomic bins..."
+[1] "step 7: re-adjust baseline ..."
+[1] "step 8: final prediction ..."
+[1] "step 9: saving results..."
+[1] "step 10: ploting heatmap ..."
+Time difference of 2.483984 mins
+2026-08-14 20:51:22 | Saved: /home/star/Documents/CopyKAT/copykat_batches/batch_9/copykat_result_batch_9.rds
+2026-08-14 20:51:22 | Saved prediction CSV for batch 9
+2026-08-14 20:51:22 | Finished batch 9
+2026-08-14 20:51:22 | Preparing batch 10 of 20
+2026-08-14 20:51:22 | Running CopyKAT for batch 10
+2026-08-14 20:51:22 | Batch cells: 2500
+2026-08-14 20:51:22 | Batch genes: 23546
+2026-08-14 20:51:22 | Batch normal cells: 2417
+2026-08-14 20:51:22 | Batch matrix class before dense conversion: dgCMatrix
+2026-08-14 20:51:22 | Batch matrix class after dense conversion: matrix, array
+2026-08-14 20:51:22 | Dense matrix size: 0.4 Gb
+[1] "running copykat v1.2.5"
+[1] "step1: read and filter data ..."
+[1] "23546 genes, 2500 cells in raw data"
+[1] "5334 genes past LOW.DR filtering"
+[1] "WARNING: low data quality; assigned LOW.DR to UP.DR..."
+[1] "step 2: annotations gene coordinates ..."
+[1] "start annotation ..."
+[1] "step 3: smoothing data with dlm ..."
+[1] "step 4: measuring baselines ..."
+[1] "1344 known normal cells found in dataset"
+[1] "run with known normal..."
+[1] "baseline is from known input"
+[1] "step 5: segmentation..."
+[1] "step 6: convert to genomic bins..."
+[1] "step 7: re-adjust baseline ..."
+[1] "step 8: final prediction ..."
+[1] "step 9: saving results..."
+[1] "step 10: ploting heatmap ..."
+Time difference of 2.685047 mins
+2026-08-14 20:54:04 | Saved: /home/star/Documents/CopyKAT/copykat_batches/batch_10/copykat_result_batch_10.rds
+2026-08-14 20:54:04 | Saved prediction CSV for batch 10
+2026-08-14 20:54:04 | Finished batch 10
+2026-08-14 20:54:04 | Preparing batch 11 of 20
+2026-08-14 20:54:04 | Running CopyKAT for batch 11
+2026-08-14 20:54:04 | Batch cells: 2500
+2026-08-14 20:54:04 | Batch genes: 23546
+2026-08-14 20:54:04 | Batch normal cells: 2428
+2026-08-14 20:54:04 | Batch matrix class before dense conversion: dgCMatrix
+2026-08-14 20:54:05 | Batch matrix class after dense conversion: matrix, array
+2026-08-14 20:54:05 | Dense matrix size: 0.4 Gb
+[1] "running copykat v1.2.5"
+[1] "step1: read and filter data ..."
+[1] "23546 genes, 2500 cells in raw data"
+[1] "5152 genes past LOW.DR filtering"
+[1] "WARNING: low data quality; assigned LOW.DR to UP.DR..."
+[1] "step 2: annotations gene coordinates ..."
+[1] "start annotation ..."
+[1] "step 3: smoothing data with dlm ..."
+[1] "step 4: measuring baselines ..."
+[1] "1272 known normal cells found in dataset"
+[1] "run with known normal..."
+[1] "baseline is from known input"
+[1] "step 5: segmentation..."
+[1] "step 6: convert to genomic bins..."
+[1] "step 7: re-adjust baseline ..."
+[1] "step 8: final prediction ..."
+[1] "step 9: saving results..."
+[1] "step 10: ploting heatmap ..."
+Time difference of 2.410237 mins
+2026-08-14 20:56:30 | Saved: /home/star/Documents/CopyKAT/copykat_batches/batch_11/copykat_result_batch_11.rds
+2026-08-14 20:56:30 | Saved prediction CSV for batch 11
+2026-08-14 20:56:30 | Finished batch 11
+2026-08-14 20:56:30 | Preparing batch 12 of 20
+2026-08-14 20:56:30 | Running CopyKAT for batch 12
+2026-08-14 20:56:30 | Batch cells: 2500
+2026-08-14 20:56:30 | Batch genes: 23546
+2026-08-14 20:56:30 | Batch normal cells: 1736
+2026-08-14 20:56:30 | Batch matrix class before dense conversion: dgCMatrix
+2026-08-14 20:56:31 | Batch matrix class after dense conversion: matrix, array
+2026-08-14 20:56:31 | Dense matrix size: 0.4 Gb
+[1] "running copykat v1.2.5"
+[1] "step1: read and filter data ..."
+[1] "23546 genes, 2500 cells in raw data"
+[1] "7058 genes past LOW.DR filtering"
+[1] "step 2: annotations gene coordinates ..."
+[1] "start annotation ..."
+[1] "step 3: smoothing data with dlm ..."
+[1] "step 4: measuring baselines ..."
+[1] "709 known normal cells found in dataset"
+[1] "run with known normal..."
+[1] "baseline is from known input"
+[1] "step 5: segmentation..."
+[1] "step 6: convert to genomic bins..."
+[1] "step 7: re-adjust baseline ..."
+[1] "step 8: final prediction ..."
+[1] "step 9: saving results..."
+[1] "step 10: ploting heatmap ..."
+Time difference of 2.859725 mins
+2026-08-14 20:59:23 | Saved: /home/star/Documents/CopyKAT/copykat_batches/batch_12/copykat_result_batch_12.rds
+2026-08-14 20:59:23 | Saved prediction CSV for batch 12
+2026-08-14 20:59:23 | Finished batch 12
+2026-08-14 20:59:23 | Preparing batch 13 of 20
+2026-08-14 20:59:23 | Running CopyKAT for batch 13
+2026-08-14 20:59:23 | Batch cells: 2500
+2026-08-14 20:59:23 | Batch genes: 23546
+2026-08-14 20:59:23 | Batch normal cells: 665
+2026-08-14 20:59:23 | Batch matrix class before dense conversion: dgCMatrix
+2026-08-14 20:59:24 | Batch matrix class after dense conversion: matrix, array
+2026-08-14 20:59:24 | Dense matrix size: 0.4 Gb
+[1] "running copykat v1.2.5"
+[1] "step1: read and filter data ..."
+[1] "23546 genes, 2500 cells in raw data"
+[1] "7652 genes past LOW.DR filtering"
+[1] "step 2: annotations gene coordinates ..."
+[1] "start annotation ..."
+[1] "step 3: smoothing data with dlm ..."
+[1] "step 4: measuring baselines ..."
+[1] "290 known normal cells found in dataset"
+[1] "run with known normal..."
+[1] "baseline is from known input"
+[1] "step 5: segmentation..."
+[1] "step 6: convert to genomic bins..."
+[1] "step 7: re-adjust baseline ..."
+[1] "step 8: final prediction ..."
+[1] "step 9: saving results..."
+[1] "step 10: ploting heatmap ..."
+Time difference of 4.682564 mins
+2026-08-14 21:04:06 | Saved: /home/star/Documents/CopyKAT/copykat_batches/batch_13/copykat_result_batch_13.rds
+2026-08-14 21:04:06 | Saved prediction CSV for batch 13
+2026-08-14 21:04:06 | Finished batch 13
+2026-08-14 21:04:06 | Preparing batch 14 of 20
+2026-08-14 21:04:06 | Running CopyKAT for batch 14
+2026-08-14 21:04:06 | Batch cells: 2500
+2026-08-14 21:04:06 | Batch genes: 23546
+2026-08-14 21:04:06 | Batch normal cells: 140
+2026-08-14 21:04:06 | Batch matrix class before dense conversion: dgCMatrix
+2026-08-14 21:04:06 | Batch matrix class after dense conversion: matrix, array
+2026-08-14 21:04:06 | Dense matrix size: 0.4 Gb
+[1] "running copykat v1.2.5"
+[1] "step1: read and filter data ..."
+[1] "23546 genes, 2500 cells in raw data"
+[1] "7588 genes past LOW.DR filtering"
+[1] "step 2: annotations gene coordinates ..."
+[1] "start annotation ..."
+[1] "step 3: smoothing data with dlm ..."
+[1] "step 4: measuring baselines ..."
+[1] "97 known normal cells found in dataset"
+[1] "run with known normal..."
+[1] "baseline is from known input"
+[1] "step 5: segmentation..."
+[1] "step 6: convert to genomic bins..."
+[1] "step 7: re-adjust baseline ..."
+[1] "step 8: final prediction ..."
+[1] "step 9: saving results..."
+[1] "step 10: ploting heatmap ..."
+Time difference of 5.887055 mins
+2026-08-14 21:10:01 | Saved: /home/star/Documents/CopyKAT/copykat_batches/batch_14/copykat_result_batch_14.rds
+2026-08-14 21:10:01 | Saved prediction CSV for batch 14
+2026-08-14 21:10:01 | Finished batch 14
+2026-08-14 21:10:01 | Preparing batch 15 of 20
+2026-08-14 21:10:01 | Running CopyKAT for batch 15
+2026-08-14 21:10:01 | Batch cells: 2500
+2026-08-14 21:10:01 | Batch genes: 23546
+2026-08-14 21:10:01 | Batch normal cells: 151
+2026-08-14 21:10:01 | Batch matrix class before dense conversion: dgCMatrix
+2026-08-14 21:10:02 | Batch matrix class after dense conversion: matrix, array
+2026-08-14 21:10:02 | Dense matrix size: 0.4 Gb
+[1] "running copykat v1.2.5"
+[1] "step1: read and filter data ..."
+[1] "23546 genes, 2500 cells in raw data"
+[1] "7431 genes past LOW.DR filtering"
+[1] "step 2: annotations gene coordinates ..."
+[1] "start annotation ..."
+[1] "step 3: smoothing data with dlm ..."
+[1] "step 4: measuring baselines ..."
+[1] "107 known normal cells found in dataset"
+[1] "run with known normal..."
+[1] "baseline is from known input"
+[1] "step 5: segmentation..."
+[1] "step 6: convert to genomic bins..."
+[1] "step 7: re-adjust baseline ..."
+[1] "step 8: final prediction ..."
+[1] "step 9: saving results..."
+[1] "step 10: ploting heatmap ..."
+Time difference of 5.763469 mins
+2026-08-14 21:15:48 | Saved: /home/star/Documents/CopyKAT/copykat_batches/batch_15/copykat_result_batch_15.rds
+2026-08-14 21:15:48 | Saved prediction CSV for batch 15
+2026-08-14 21:15:49 | Finished batch 15
+2026-08-14 21:15:49 | Preparing batch 16 of 20
+2026-08-14 21:15:49 | Running CopyKAT for batch 16
+2026-08-14 21:15:49 | Batch cells: 2500
+2026-08-14 21:15:49 | Batch genes: 23546
+2026-08-14 21:15:49 | Batch normal cells: 145
+2026-08-14 21:15:49 | Batch matrix class before dense conversion: dgCMatrix
+2026-08-14 21:15:49 | Batch matrix class after dense conversion: matrix, array
+2026-08-14 21:15:49 | Dense matrix size: 0.4 Gb
+[1] "running copykat v1.2.5"
+[1] "step1: read and filter data ..."
+[1] "23546 genes, 2500 cells in raw data"
+[1] "7600 genes past LOW.DR filtering"
+[1] "step 2: annotations gene coordinates ..."
+[1] "start annotation ..."
+[1] "step 3: smoothing data with dlm ..."
+[1] "step 4: measuring baselines ..."
+[1] "94 known normal cells found in dataset"
+[1] "run with known normal..."
+[1] "baseline is from known input"
+[1] "step 5: segmentation..."
+[1] "step 6: convert to genomic bins..."
+[1] "step 7: re-adjust baseline ..."
+[1] "step 8: final prediction ..."
+[1] "step 9: saving results..."
+[1] "step 10: ploting heatmap ..."
+Time difference of 5.841961 mins
+2026-08-14 21:21:41 | Saved: /home/star/Documents/CopyKAT/copykat_batches/batch_16/copykat_result_batch_16.rds
+2026-08-14 21:21:41 | Saved prediction CSV for batch 16
+2026-08-14 21:21:41 | Finished batch 16
+2026-08-14 21:21:41 | Preparing batch 17 of 20
+2026-08-14 21:21:41 | Running CopyKAT for batch 17
+2026-08-14 21:21:41 | Batch cells: 2500
+2026-08-14 21:21:41 | Batch genes: 23546
+2026-08-14 21:21:41 | Batch normal cells: 124
+2026-08-14 21:21:41 | Batch matrix class before dense conversion: dgCMatrix
+2026-08-14 21:21:42 | Batch matrix class after dense conversion: matrix, array
+2026-08-14 21:21:42 | Dense matrix size: 0.4 Gb
+[1] "running copykat v1.2.5"
+[1] "step1: read and filter data ..."
+[1] "23546 genes, 2500 cells in raw data"
+[1] "7424 genes past LOW.DR filtering"
+[1] "step 2: annotations gene coordinates ..."
+[1] "start annotation ..."
+[1] "step 3: smoothing data with dlm ..."
+[1] "step 4: measuring baselines ..."
+[1] "88 known normal cells found in dataset"
+[1] "run with known normal..."
+[1] "baseline is from known input"
+[1] "step 5: segmentation..."
+[1] "step 6: convert to genomic bins..."
+[1] "step 7: re-adjust baseline ..."
+[1] "step 8: final prediction ..."
+[1] "step 9: saving results..."
+[1] "step 10: ploting heatmap ..."
+Time difference of 5.776431 mins
+2026-08-14 21:27:29 | Saved: /home/star/Documents/CopyKAT/copykat_batches/batch_17/copykat_result_batch_17.rds
+2026-08-14 21:27:29 | Saved prediction CSV for batch 17
+2026-08-14 21:27:30 | Finished batch 17
+2026-08-14 21:27:30 | Preparing batch 18 of 20
+2026-08-14 21:27:30 | Running CopyKAT for batch 18
+2026-08-14 21:27:30 | Batch cells: 2500
+2026-08-14 21:27:30 | Batch genes: 23546
+2026-08-14 21:27:30 | Batch normal cells: 160
+2026-08-14 21:27:30 | Batch matrix class before dense conversion: dgCMatrix
+2026-08-14 21:27:30 | Batch matrix class after dense conversion: matrix, array
+2026-08-14 21:27:30 | Dense matrix size: 0.4 Gb
+[1] "running copykat v1.2.5"
+[1] "step1: read and filter data ..."
+[1] "23546 genes, 2500 cells in raw data"
+[1] "7469 genes past LOW.DR filtering"
+[1] "step 2: annotations gene coordinates ..."
+[1] "start annotation ..."
+[1] "step 3: smoothing data with dlm ..."
+[1] "step 4: measuring baselines ..."
+[1] "107 known normal cells found in dataset"
+[1] "run with known normal..."
+[1] "baseline is from known input"
+[1] "step 5: segmentation..."
+[1] "step 6: convert to genomic bins..."
+[1] "step 7: re-adjust baseline ..."
+[1] "step 8: final prediction ..."
+[1] "step 9: saving results..."
+[1] "step 10: ploting heatmap ..."
+Time difference of 5.764043 mins
+2026-08-14 21:33:17 | Saved: /home/star/Documents/CopyKAT/copykat_batches/batch_18/copykat_result_batch_18.rds
+2026-08-14 21:33:17 | Saved prediction CSV for batch 18
+2026-08-14 21:33:18 | Finished batch 18
+2026-08-14 21:33:18 | Preparing batch 19 of 20
+2026-08-14 21:33:18 | Running CopyKAT for batch 19
+2026-08-14 21:33:18 | Batch cells: 2500
+2026-08-14 21:33:18 | Batch genes: 23546
+2026-08-14 21:33:18 | Batch normal cells: 1420
+2026-08-14 21:33:18 | Batch matrix class before dense conversion: dgCMatrix
+2026-08-14 21:33:18 | Batch matrix class after dense conversion: matrix, array
+2026-08-14 21:33:18 | Dense matrix size: 0.4 Gb
+[1] "running copykat v1.2.5"
+[1] "step1: read and filter data ..."
+[1] "23546 genes, 2500 cells in raw data"
+[1] "7668 genes past LOW.DR filtering"
+[1] "step 2: annotations gene coordinates ..."
+[1] "start annotation ..."
+[1] "step 3: smoothing data with dlm ..."
+[1] "step 4: measuring baselines ..."
+[1] "1087 known normal cells found in dataset"
+[1] "run with known normal..."
+[1] "baseline is from known input"
+[1] "step 5: segmentation..."
+[1] "step 6: convert to genomic bins..."
+[1] "step 7: re-adjust baseline ..."
+[1] "step 8: final prediction ..."
+[1] "step 9: saving results..."
+[1] "step 10: ploting heatmap ..."
+Time difference of 4.703128 mins
+2026-08-14 21:38:01 | Saved: /home/star/Documents/CopyKAT/copykat_batches/batch_19/copykat_result_batch_19.rds
+2026-08-14 21:38:01 | Saved prediction CSV for batch 19
+2026-08-14 21:38:01 | Finished batch 19
+2026-08-14 21:38:02 | Preparing batch 20 of 20
+2026-08-14 21:38:02 | Running CopyKAT for batch 20
+2026-08-14 21:38:02 | Batch cells: 1031
+2026-08-14 21:38:02 | Batch genes: 23546
+2026-08-14 21:38:02 | Batch normal cells: 931
+2026-08-14 21:38:02 | Batch matrix class before dense conversion: dgCMatrix
+2026-08-14 21:38:02 | Batch matrix class after dense conversion: matrix, array
+2026-08-14 21:38:02 | Dense matrix size: 0.2 Gb
+[1] "running copykat v1.2.5"
+[1] "step1: read and filter data ..."
+[1] "23546 genes, 1031 cells in raw data"
+[1] "6673 genes past LOW.DR filtering"
+[1] "WARNING: low data quality; assigned LOW.DR to UP.DR..."
+[1] "step 2: annotations gene coordinates ..."
+[1] "start annotation ..."
+[1] "step 3: smoothing data with dlm ..."
+[1] "step 4: measuring baselines ..."
+[1] "626 known normal cells found in dataset"
+[1] "run with known normal..."
+[1] "baseline is from known input"
+[1] "step 5: segmentation..."
+[1] "step 6: convert to genomic bins..."
+[1] "step 7: re-adjust baseline ..."
+[1] "step 8: final prediction ..."
+[1] "step 9: saving results..."
+[1] "step 10: ploting heatmap ..."
+Time difference of 1.348608 mins
+2026-08-14 21:39:23 | Saved: /home/star/Documents/CopyKAT/copykat_batches/batch_20/copykat_result_batch_20.rds
+2026-08-14 21:39:23 | Saved prediction CSV for batch 20
+2026-08-14 21:39:23 | Finished batch 20
+2026-08-14 21:39:23 | Finished batch loop
+2026-08-14 21:39:23 | Combining prediction CSV files: 20
+2026-08-14 21:39:23 | Input cells after filtering: 48531
+2026-08-14 21:39:23 | Unique predicted cells: 48531
+2026-08-14 21:39:23 | Missing predictions: 0
+2026-08-14 21:39:23 | Extra predictions: 0
+2026-08-14 21:39:23 | Saved: /home/star/Documents/CopyKAT/copykat_final/copykat_combined_predictions.rds
+2026-08-14 21:39:23 | Combined predictions saved: /home/star/Documents/CopyKAT/copykat_final/copykat_combined_predictions.csv
+2026-08-14 21:39:23 | Completed batches: 20
+2026-08-14 21:39:23 | Failed batches: 0
+2026-08-14 21:39:23 | CopyKAT batch script finished

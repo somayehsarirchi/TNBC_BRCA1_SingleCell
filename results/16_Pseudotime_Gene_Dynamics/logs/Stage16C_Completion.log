@@ -1,0 +1,26 @@
+============================================================
+TNBC Single-Cell Analysis Pipeline
+Stage 16C: Graph-associated Gene Characterization
+============================================================
+
+Completion time: 2026-09-10 16:02:25
+
+Stage 16B input: C:/Users/asus/Desktop/TNBC_BRCA1_SingleCell/results/16_Pseudotime_Gene_Dynamics/tables/supplementary/01_graph_test_RAW.csv
+Genes analyzed: 24865
+Genes with finite Moran's I: 21610
+Genes with q < 0.05: 14356
+Genes with Moran's I >= 0.10: 2908
+
+Stage 15: FROZEN
+Stage 16A: FROZEN
+Stage 16B: FROZEN
+Stage 16C: COMPLETED
+
+Trajectory reconstruction: NOT PERFORMED
+Root selection: NOT PERFORMED
+Pseudotime recalculation: NOT PERFORMED
+graph_test(): NOT RERUN
+Frozen Stage 16B result: NOT MODIFIED
+
+STATUS: STAGE 16C COMPLETED SUCCESSFULLY
+============================================================

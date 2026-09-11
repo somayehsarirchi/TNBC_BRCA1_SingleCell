@@ -1,0 +1,20 @@
+"Check","Passed"
+"Stage 17B loaded",TRUE
+"Stage 17C loaded",TRUE
+"Stage 17B gene cluster table available",TRUE
+"Gene column available",TRUE
+"Cluster column available",TRUE
+"Silhouette values available",TRUE
+"Temporal genes retained",TRUE
+"Expected 569 strong temporal genes",TRUE
+"At least two temporal clusters",TRUE
+"Cluster centroids available",TRUE
+"20 pseudotime bins available",TRUE
+"Cluster centroids have 20 bins",TRUE
+"Transcriptome-wide background available",TRUE
+"Temporal genes mapped to Entrez",TRUE
+"Background genes mapped to Entrez",TRUE
+"GO analysis executed",TRUE
+"KEGG analysis executed",TRUE
+"Main biological interpretation table saved",TRUE
+"Temporal profile figure saved",TRUE

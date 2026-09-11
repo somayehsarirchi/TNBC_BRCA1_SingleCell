@@ -1,0 +1,16 @@
+"Check","Passed"
+"Stage17 strong temporal gene table available",TRUE
+"Stage17 strong temporal genes > 0",TRUE
+"Expected strong temporal gene count = 569",TRUE
+"Synchronized-cell table available",TRUE
+"Expected synchronized cell count = 6735",TRUE
+"All synchronized pseudotime values finite",TRUE
+"RNA assay available",TRUE
+"RNA data layer available",TRUE
+"Strong temporal genes found in expression",TRUE
+"Mean expression matrix finite",TRUE
+"Z-score matrix finite",TRUE
+"Selected K within candidate range",TRUE
+"All analyzed genes assigned to a cluster",TRUE
+"Cluster centroid dimensions valid",TRUE
+"All cluster assignments unique per gene",TRUE

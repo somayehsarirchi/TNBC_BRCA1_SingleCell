@@ -1,0 +1,25 @@
+TNBC Single-cell RNA-seq Analysis Pipeline
+Step 3: PCA, clustering and UMAP
+Date: 2026-07-31 19:02:03.531893
+
+Summary
+-------
+Number of cells: 54478
+Number of features (integrated assay): 2000
+Number of features (RNA assay): 24865
+Number of clusters: 22
+Cluster IDs: 0, 1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12, 13, 14, 15, 16, 17, 18, 19, 20, 21
+
+Cells per cluster
+-----------------
+
+   0    1    2    3    4    5    6    7    8    9   10   11   12   13   14   15   16   17   18   19   20   21 
+8929 7676 6281 5078 4286 4021 2475 2332 2311 2148 2007 1178  913  888  878  723  677  511  400  389  288   89 
+
+Cells per biological group
+--------------------------
+
+BRCA1_tumour    TotalCell 
+       33225        21253 
+
+Step 3 completed successfully.

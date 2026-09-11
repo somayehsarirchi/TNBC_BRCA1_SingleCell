@@ -1,0 +1,14 @@
+"Metric","Value"
+"Frozen Stage 15 CDS cells",22145
+"Frozen Stage 15 CDS genes",24865
+"Finite Stage 15 pseudotime cells",6735
+"Stage 16B analysis cells",6735
+"Final synchronized cells",6735
+"Genes tested",24865
+"Genes with finite Spearman rho",21610
+"Stage 16B strong trajectory genes",2908
+"Stage 16B strong genes present in expression",2908
+"Significant temporal genes",1653
+"Strong temporal genes",569
+"Increasing temporal genes",1494
+"Decreasing temporal genes",159

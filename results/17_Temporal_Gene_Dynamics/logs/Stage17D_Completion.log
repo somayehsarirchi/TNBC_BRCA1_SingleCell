@@ -1,0 +1,33 @@
+============================================================
+STAGE 17D: BIOLOGICAL INTERPRETATION
+============================================================
+Project directory: C:/Users/asus/Desktop/TNBC_BRCA1_SingleCell
+Stage 17B object found.
+Stage 17C object found.
+Stage 17B loaded successfully.
+Stage 17C loaded successfully.
+Temporal genes: 569
+Temporal genes mapped to Entrez: 550
+Background genes: 24865
+Background genes mapped to Entrez: 18815
+Background source: RNA_assay_features_from_Stage17_source_Seurat_object
+============================================================
+STAGE 17D COMPLETED SUCCESSFULLY
+============================================================
+Temporal genes: 569
+Temporal clusters: 2
+Cluster 1 genes: 53
+Cluster 2 genes: 516
+Pseudotime bins: 20
+Temporal genes mapped to Entrez: 550
+Background genes: 24865
+Background genes mapped to Entrez: 18815
+GO clusters with significant results: 2
+KEGG clusters with significant results: 0
+Validation passed: 19/19
+Central RDS: C:/Users/asus/Desktop/TNBC_BRCA1_SingleCell/objects/Stage17D_Biological_Interpretation_Results.rds
+Completion log: C:/Users/asus/Desktop/TNBC_BRCA1_SingleCell/results/17_Temporal_Gene_Dynamics/logs/Stage17D_Completion.log
+Stage 17B remained frozen.
+Stage 17C remained frozen.
+No trajectory reconstruction, root selection, or pseudotime recalculation was performed.
+============================================================

@@ -1,0 +1,3 @@
+"Temporal_Cluster","Gene_Count","Mean_Centroid_Correlation","Median_Centroid_Correlation","Mean_Silhouette","Median_Silhouette","Pattern","Early_Mean_Z","Late_Mean_Z","Peak_Bin","Trough_Bin","Biological_Description"
+"1",53,0.816990697501568,0.856799176941493,0.518527777324676,0.562997981058334,"Early_Peaking_Decreasing",1.53064981481417,-0.397391907054685,3,8,"Early-peaking immune/antigen-presentation-associated temporal program"
+"2",516,0.892935615381198,0.927005186034286,0.631682647271175,0.657059544143178,"Late_Increasing",-0.948452958114389,1.0102279410153,19,6,"Broad late-emerging epithelial/cellular-state-associated temporal program"

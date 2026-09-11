@@ -1,0 +1,16 @@
+"Check","Status"
+"Frozen Stage 15 CDS exists",TRUE
+"Frozen Stage 15 CDS is cell_data_set",TRUE
+"Pseudotime length matches CDS cells",TRUE
+"Finite pseudotime cells equal expected Stage 15 count",TRUE
+"Stage 16B cell list contains expected 6735 cells",TRUE
+"All Stage 16B cells present in frozen CDS",TRUE
+"All Stage 16B cells have finite frozen pseudotime",TRUE
+"All analysis cells present in Seurat object",TRUE
+"Final synchronized cell count equals 6735",TRUE
+"RNA data layer exists",TRUE
+"RNA expression contains only finite values",TRUE
+"Pseudotime length equals expression cell count",TRUE
+"Gene association result count equals expression gene count",TRUE
+"FDR values successfully calculated",TRUE
+"Stage 17 analysis completed without upstream rerun",TRUE

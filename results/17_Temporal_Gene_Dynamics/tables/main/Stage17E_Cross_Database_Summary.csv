@@ -1,0 +1,5 @@
+Database,Temporal_Cluster,Input_Genes,Mapped_Genes,Mapping_Rate_Percent,Result_Pathways,Significant_Pathways
+MSigDB_Hallmark,1,53,27,50.94,6,6
+Reactome,1,53,53,100,89,89
+MSigDB_Hallmark,2,516,212,41.09,4,4
+Reactome,2,516,497,96.32,324,324

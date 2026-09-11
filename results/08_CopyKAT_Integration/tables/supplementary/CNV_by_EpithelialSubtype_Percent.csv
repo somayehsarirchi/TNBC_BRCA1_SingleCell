@@ -1,0 +1,15 @@
+"","Tumor_like","Normal_like","Unknown"
+"Mesenchymal / contractile epithelial",97.4,0,2.6
+"ECM-remodeling epithelial",94.9,0,5.1
+"Interferon / stress-responsive epithelial",7.3,16.7,75.9
+"Secretory inflammatory luminal  epithelial",15.2,81.2,3.7
+"ER+ / luminal mature epithelial",4.5,84.7,10.7
+"Basal epithelial with immune signal",0,0,100
+"Basal / squamous epithelial",95.4,0.2,4.4
+"Mitotic basal epithelial",99,0,1
+"Myoepithelial / ECM-producing epithelial",1.9,64.3,33.8
+"EMT-high basal invasive epithelial",98.1,0.1,1.8
+"Apocrine / luminal secretory epithelial",31.8,18.2,50
+"Highly proliferative basal epithelial",100,0,0
+"ALDH1A1+ luminal progenitor  epithelial",99.9,0,0.1
+"MHC-II antigen-presenting epithelial",56.7,7.2,36

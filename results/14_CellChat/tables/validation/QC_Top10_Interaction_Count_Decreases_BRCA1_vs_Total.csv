@@ -1,0 +1,11 @@
+"Source","Target","Difference"
+"Endothelial_cells","Normal_Epithelial",-40
+"Endothelial_cells","Fibroblasts-Tissue_stem_cells",-24
+"Endothelial_cells","Tumor_Epithelial",-23
+"Endothelial_cells","Endothelial_cells",-19
+"Fibroblasts-Tissue_stem_cells","Normal_Epithelial",-16
+"Endothelial_cells","B_cell",-14
+"iPS_cells","Normal_Epithelial",-13
+"Normal_Epithelial","Normal_Epithelial",-13
+"Endothelial_cells","CMP",-12
+"Endothelial_cells","iPS_cells",-12

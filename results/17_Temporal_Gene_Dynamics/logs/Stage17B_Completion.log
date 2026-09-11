@@ -1,0 +1,86 @@
+======================================================================
+STAGE 17B - TEMPORAL GENE PROFILE CLUSTERING
+======================================================================
+Project directory: C:/Users/asus/Desktop/TNBC_BRCA1_SingleCell
+Stage 17 directory: C:/Users/asus/Desktop/TNBC_BRCA1_SingleCell/results/17_Temporal_Gene_Dynamics
+Required packages loaded successfully.
+Canonical Stage 17 RDS found.
+Stage 17 RDS: C:/Users/asus/Desktop/TNBC_BRCA1_SingleCell/objects/Stage17_Pseudotime_Gene_Dynamics_Results.rds
+Stage 17 RDS loaded successfully.
+Stage 17 object class: list
+Required Stage 17 fields verified.
+Stage 17 strong temporal gene table loaded.
+Strong temporal gene table dimensions: 569 rows x 7 columns.
+Strong temporal gene columns: Gene, Spearman_rho, p_value, FDR, Absolute_Spearman_rho, Direction, Stage16B_Strong_Gene
+Strong temporal gene column selected: Gene
+Unique strong temporal genes: 569
+Verified Stage 17 strong temporal gene count: 569.
+Stage 17 synchronized-cell table verified.
+Synchronized-cell table dimensions: 6735 rows x 2 columns.
+Finite Stage 17 pseudotime cells: 6735
+Verified 6735 finite Stage 17 pseudotime cells.
+Seurat expression object recorded by Stage 17:
+C:/Users/asus/Desktop/TNBC_SingleCell_Pipeline/objects/TNBC_Epithelial_CopyKAT.rds
+Seurat expression object loaded successfully.
+Seurat object class: Seurat
+Total Seurat cells: 22145
+Available Seurat assays: RNA, integrated
+RNA assay layers: scale.data, data, counts
+Common Stage 17 / Seurat cells: 6735
+Verified final synchronized cell count: 6735.
+Pseudotime minimum: 0
+Pseudotime maximum: 25.982011
+Extracting RNA/data layer for synchronized cells.
+RNA/data dimensions: 24865 genes x 6735 cells.
+RNA expression cell order synchronized successfully.
+Stage 17 strong temporal genes: 569
+Strong temporal genes found in RNA expression: 569
+Verified all 569 Stage 17 strong temporal genes are present in expression.
+Strong temporal gene expression matrix: 569 genes x 6735 cells.
+Pseudotime bins: 20
+Pseudotime bin cell counts: 122, 368, 184, 942, 211, 14, 42, 40, 154, 271, 988, 314, 342, 781, 492, 178, 327, 291, 288, 386
+Calculating mean expression per pseudotime bin.
+Mean expression matrix generated successfully.
+Mean expression dimensions: 569 genes x 20 pseudotime bins.
+Calculating gene-wise Z-scores across pseudotime bins.
+Zero-variance genes across pseudotime bins: 0
+Final Z-score matrix: 569 genes x 20 bins.
+Calculating Euclidean gene distance matrix.
+Evaluating K candidates: 2, 3, 4, 5, 6, 7, 8
+Evaluating K = 2
+Evaluating K = 3
+Evaluating K = 4
+Evaluating K = 5
+Evaluating K = 6
+Evaluating K = 7
+Evaluating K = 8
+Selected K: 2
+Selected mean silhouette: 0.62114274
+Ranking genes by Pearson correlation with cluster centroids.
+Heatmap generated: C:/Users/asus/Desktop/TNBC_BRCA1_SingleCell/results/17_Temporal_Gene_Dynamics/figures/main/Stage17B_Temporal_Gene_Clusters_Heatmap.pdf
+All structural validation checks passed.
+Central Stage 17B RDS saved: C:/Users/asus/Desktop/TNBC_BRCA1_SingleCell/objects/Stage17B_Temporal_Clustering_Results.rds
+Verified output files: 15 / 15
+======================================================================
+STAGE 17B COMPLETED SUCCESSFULLY
+======================================================================
+Stage 17 strong temporal genes: 569
+Strong temporal genes in expression: 569
+Final synchronized cells: 6735
+Pseudotime bins: 20
+Genes clustered: 569
+Candidate K values: 2, 3, 4, 5, 6, 7, 8
+Selected K: 2
+Selected mean silhouette: 0.62114274
+Minimum silhouette: 0.18283565
+Median silhouette: 0.64903642
+Maximum silhouette: 0.73270355
+Trajectory reconstruction: NOT PERFORMED
+Root selection: NOT PERFORMED
+Pseudotime recalculation: NOT PERFORMED
+Stage 15 remained frozen.
+Stage 16 remained frozen.
+Stage 17 remained frozen.
+Central object: C:/Users/asus/Desktop/TNBC_BRCA1_SingleCell/objects/Stage17B_Temporal_Clustering_Results.rds
+Completion log: C:/Users/asus/Desktop/TNBC_BRCA1_SingleCell/results/17_Temporal_Gene_Dynamics/logs/Stage17B_Completion.log
+======================================================================

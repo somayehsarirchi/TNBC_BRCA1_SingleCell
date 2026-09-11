@@ -1,0 +1,11 @@
+"Source","Target","Difference"
+"Endothelial_cells","CMP",-0.590530761929871
+"Endothelial_cells","Normal_Epithelial",-0.585254484679987
+"Fibroblasts-Tissue_stem_cells","Normal_Epithelial",-0.506268708760143
+"Endothelial_cells","DC-Monocyt",-0.474657498302539
+"Endothelial_cells","Macrophage",-0.468435731465062
+"Endothelial_cells","Endothelial_cells",-0.4290928872939
+"Endothelial_cells","Tumor_Epithelial",-0.409946516109901
+"Endothelial_cells","NK_cell-T_cells",-0.354408869572634
+"Fibroblasts-Tissue_stem_cells","Tumor_Epithelial",-0.34311487158324
+"Endothelial_cells","Fibroblasts-Tissue_stem_cells",-0.335035240819176

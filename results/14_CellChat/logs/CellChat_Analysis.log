@@ -1,0 +1,46 @@
+TNBC Single-cell RNA-seq Analysis Pipeline
+CELLCHAT ANALYSIS
+==========================================
+Date/time: 2026-08-21 08:01:38
+
+Comparison: BRCA1_tumour vs TotalCell
+
+Input objects:
+TNBC_Annotated.rds
+TNBC_Epithelial_CopyKAT.rds
+
+Expression:
+Normalized RNA expression was used.
+Integrated expression was not used.
+
+Epithelial classification:
+Tumor_like -> Tumor_Epithelial
+Normal_like -> Normal_Epithelial
+Unknown epithelial cells -> excluded
+
+Non-epithelial populations:
+Retained regardless of CopyKAT status.
+
+Cell population filtering:
+Minimum cells per condition: 10
+Shared cell populations: 11
+
+Results:
+BRCA1_tumour cells: 32324
+TotalCell cells: 20698
+BRCA1_tumour interaction records: 1016
+TotalCell interaction records: 1194
+BRCA1_tumour pathways: 46
+TotalCell pathways: 50
+
+QC:
+CopyKAT metadata transfer: PASSED
+Epithelial classification: PASSED
+Unknown epithelial removal: PASSED
+Non-epithelial retention: PASSED
+Normalized RNA expression used: PASSED
+Integrated expression excluded: PASSED
+Shared cell populations checked: PASSED
+Direct comparability checked: PASSED
+
+CELLCHAT ANALYSIS COMPLETED SUCCESSFULLY.

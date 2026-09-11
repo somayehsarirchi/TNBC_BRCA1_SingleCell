@@ -1,0 +1,33 @@
+============================================================
+TNBC Single-Cell Analysis Pipeline
+Stage 16D: KEGG Enrichment of Strong Trajectory Genes
+============================================================
+
+Completion time: 2026-09-10 16:23:15
+
+Frozen target partition: 2
+Frozen root: Y_48
+Analysis cells: 6735
+Strong Stage 16B genes: 2908
+Strong gene symbols: 2908
+Strong Entrez genes: 2811
+Strong genes represented in KEGG: 1615
+Universe gene symbols: 24865
+Universe Entrez genes: 18815
+Universe genes represented in KEGG: 7511
+KEGG associations: 39578
+KEGG pathways available: 372
+Significant KEGG pathways: 42
+
+Stage 15: FROZEN
+Stage 16A: FROZEN
+Stage 16B: FROZEN
+Stage 16C: FROZEN
+Stage 16D: COMPLETED
+
+Trajectory reconstruction: NOT PERFORMED
+Pseudotime recalculation: NOT PERFORMED
+graph_test rerun: NOT PERFORMED
+
+STATUS: STAGE 16D COMPLETED SUCCESSFULLY
+============================================================

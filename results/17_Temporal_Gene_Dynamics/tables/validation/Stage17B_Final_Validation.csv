@@ -1,0 +1,13 @@
+"Metric","Value"
+"Stage17_Strong_Temporal_Genes",569
+"Strong_Genes_In_Expression",569
+"Final_Synchronized_Cells",6735
+"Pseudotime_Bins",20
+"Genes_After_ZeroVariance_Filter",569
+"Selected_K",2
+"Selected_Mean_Silhouette",0.621142738471237
+"Minimum_Silhouette",0.182835653296657
+"Median_Silhouette",0.649036415709463
+"Maximum_Silhouette",0.732703550763307
+"Mean_Centroid_Correlation",0.885861659937226
+"Minimum_Centroid_Correlation",0.41596199943839

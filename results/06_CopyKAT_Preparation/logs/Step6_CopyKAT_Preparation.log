@@ -1,0 +1,25 @@
+TNBC Single-cell RNA-seq Analysis Pipeline
+Step 6: CopyKAT preparation
+Date: 2026-08-14 16:42:33.113355
+
+Summary
+-------
+Purified epithelial cells: 21962
+Known normal cells: 26569
+Total cells for CopyKAT: 48531
+Genes: 24865
+TotalCell cells: 20879
+BRCA1_tumour cells: 27652
+Normal cells included: 26569
+
+Normal cell types used
+----------------------
+NK_cell-T_cells, B_cell, Macrophage, DC-Monocyte, Fibroblasts-Tissue_stem_cells, Endothelial_cells
+
+Output files
+------------
+C:/Users/asus/Desktop/SingleCell/TNBC_SingleCell_Pipeline_Test/objects/copykat_inputs.rds
+C:/Users/asus/Desktop/SingleCell/TNBC_SingleCell_Pipeline_Test/results/CopyKAT_Normal_Cell_Barcodes.csv
+C:/Users/asus/Desktop/SingleCell/TNBC_SingleCell_Pipeline_Test/results/CopyKAT_Input_Summary.csv
+
+Step 6 completed successfully.

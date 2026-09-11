@@ -1,0 +1,5 @@
+"Database","Total_Terms","BRCA1_tumour_Terms","TotalCell_Terms","No_Direction_Terms","Minimum_Padj","Maximum_Abs_NES"
+"GO_BP",292,9,283,0,7.474e-08,2.46685762286318
+"Hallmark",18,0,18,0,4.9e-09,2.47882747127734
+"KEGG",27,2,25,0,0.000699487231791404,2.2482736387996
+"Reactome",38,23,15,0,0.000389847552821812,2.27238778584051

@@ -1,0 +1,9 @@
+"Metric","Value"
+"Stage16B_Input_Genes",24865
+"Genes_with_finite_Morans_I",21610
+"Genes_with_q_lt_0.05",14356
+"Genes_with_Morans_I_ge_0.10",2908
+"Genes_with_Morans_I_gt_0",16708
+"Genes_with_Morans_I_le_0",4902
+"Top100_Genes_Generated",100
+"Top50_Genes_Generated",50

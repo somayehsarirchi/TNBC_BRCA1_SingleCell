@@ -1,0 +1,43 @@
+TNBC Single-cell RNA-seq Analysis Pipeline
+Step 5: Epithelial compartment re-analysis and refinement
+Date: 2026-08-14 14:51:06.309109
+
+Summary
+-------
+Epithelial cells: 22145
+Balanced epithelial cells: 4836
+Number of epithelial clusters: 14
+Purified epithelial cells: 21962
+Number of epithelial subtypes: 14
+
+Cells per epithelial subtype
+--------------------------
+
+      Mesenchymal / contractile epithelial                  ECM-remodeling epithelial  Interferon / stress-responsive epithelial 
+                                       380                                        607                                        532 
+Secretory inflammatory luminal  epithelial            ER+ / luminal mature epithelial        Basal epithelial with immune signal 
+                                       191                                        177                                        183 
+               Basal / squamous epithelial                   Mitotic basal epithelial   Myoepithelial / ECM-producing epithelial 
+                                      8009                                       6300                                        266 
+        EMT-high basal invasive epithelial    Apocrine / luminal secretory epithelial      Highly proliferative basal epithelial 
+                                      2986                                         66                                        858 
+   ALDH1A1+ luminal progenitor  epithelial       MHC-II antigen-presenting epithelial 
+                                      1024                                        566 
+
+Objects generated
+-----------------
+C:/Users/asus/Desktop/SingleCell/TNBC_SingleCell_Pipeline_Test/objects/TNBC_Epithelial_Subset.rds
+C:/Users/asus/Desktop/SingleCell/TNBC_SingleCell_Pipeline_Test/objects/TNBC_Epithelial_Balanced.rds
+C:/Users/asus/Desktop/SingleCell/TNBC_SingleCell_Pipeline_Test/objects/TNBC_Epithelial_Balanced_Annotated.rds
+C:/Users/asus/Desktop/SingleCell/TNBC_SingleCell_Pipeline_Test/objects/TNBC_Epithelial_Annotated.rds
+C:/Users/asus/Desktop/SingleCell/TNBC_SingleCell_Pipeline_Test/objects/TNBC_Epithelial_Pure.rds
+
+Key result files
+----------------
+C:/Users/asus/Desktop/SingleCell/TNBC_SingleCell_Pipeline_Test/results/Epithelial_top60_markers.csv
+C:/Users/asus/Desktop/SingleCell/TNBC_SingleCell_Pipeline_Test/results/Epithelial_Balanced_top20_markers.csv
+C:/Users/asus/Desktop/SingleCell/TNBC_SingleCell_Pipeline_Test/results/Epithelial_DotPlot_AnnotationMarkers.pdf
+C:/Users/asus/Desktop/SingleCell/TNBC_SingleCell_Pipeline_Test/results/Epithelial_Balanced_Annotated.pdf
+C:/Users/asus/Desktop/SingleCell/TNBC_SingleCell_Pipeline_Test/results/Epithelial_Transferred_Annotations.pdf
+
+Step 5 completed successfully.

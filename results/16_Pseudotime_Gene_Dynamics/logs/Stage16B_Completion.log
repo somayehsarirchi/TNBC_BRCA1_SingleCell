@@ -1,0 +1,30 @@
+============================================================
+TNBC Single-Cell Analysis Pipeline
+Stage 16B: Pseudotime-associated Gene Discovery
+============================================================
+
+Completion time: 2026-09-10 08:16:42
+
+Frozen Stage 15 CDS: C:/Users/asus/Desktop/TNBC_SingleCell_Pipeline/objects//TNBC_Monocle3_CDS_Final
+
+Total genes: 24865
+Total cells: 22145
+Frozen target partition: 2
+Frozen root: Y_48
+Analysis cells: 6735
+Genes tested: 24865
+Significant genes q < 0.05: 14356
+Strong genes Moran's I >= 0.10: 2908
+
+Trajectory reconstruction: NOT PERFORMED
+Partition modification: NOT PERFORMED
+Root selection: NOT PERFORMED
+Pseudotime recalculation: NOT PERFORMED
+Frozen Stage 15 CDS: NOT MODIFIED
+
+Stage 15: FROZEN
+Stage 16A: FROZEN
+Stage 16B: COMPLETED
+
+STATUS: STAGE 16B COMPLETED SUCCESSFULLY
+============================================================

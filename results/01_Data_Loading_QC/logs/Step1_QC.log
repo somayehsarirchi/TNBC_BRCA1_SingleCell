@@ -1,0 +1,17 @@
+TNBC Single-cell RNA-seq Analysis Pipeline
+Step 1: Data loading and quality control
+Date: 2026-07-31 19:12:31.517455
+
+Summary
+-------
+TotalCell cells after QC: 21253
+TotalCell genes: 22106
+BRCA1 tumour cells after QC: 33225
+BRCA1 tumour genes: 24317
+
+Objects saved
+-------------
+C:/Users/asus/Desktop/SingleCell/TNBC_SingleCell_Pipeline_Test/objects/TotalCell_QC_filtered.rds
+C:/Users/asus/Desktop/SingleCell/TNBC_SingleCell_Pipeline_Test/objects/BRCA1tumour_QC_filtered.rds
+
+Step 1 completed successfully.

@@ -1,0 +1,23 @@
+TNBC Single-cell RNA-seq Analysis Pipeline
+Step 8: Integrate CopyKAT predictions into Seurat
+Date: 2026-08-14 19:05:50.211335
+
+Summary
+-------
+Total epithelial cells: 22145
+
+CNV status counts
+-----------------
+
+ Tumor_like Normal_like     Unknown 
+      20056         633        1456 
+
+Outputs generated
+-----------------
+C:/Users/asus/Desktop/SingleCell/TNBC_SingleCell_Pipeline_Test/results/CopyKAT_CNV_Status_UMAP.pdf
+C:/Users/asus/Desktop/SingleCell/TNBC_SingleCell_Pipeline_Test/results/Epithelial_Subtypes_with_CNV.pdf
+C:/Users/asus/Desktop/SingleCell/TNBC_SingleCell_Pipeline_Test/results/CopyKAT_CNV_by_Sample.csv
+C:/Users/asus/Desktop/SingleCell/TNBC_SingleCell_Pipeline_Test/results/CopyKAT_CNV_Proportions_by_Sample.csv
+C:/Users/asus/Desktop/SingleCell/TNBC_SingleCell_Pipeline_Test/objects/TNBC_Epithelial_CopyKAT.rds
+
+Step 8 completed successfully.

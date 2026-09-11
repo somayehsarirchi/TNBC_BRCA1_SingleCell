@@ -1,0 +1,12 @@
+"Metric","Value"
+"Total_genes",24865
+"Genes_with_nonNA_p_value",21610
+"Genes_with_nonNA_q_value",24865
+"Genes_with_nonNA_Morans_I",21610
+"Genes_with_q_lt_0.05",14356
+"Genes_with_Morans_I_ge_0.10",2908
+"Genes_with_Morans_I_gt_0",16708
+"Genes_with_Morans_I_le_0",4902
+"NA_p_value",3255
+"NA_q_value",0
+"NA_Morans_I",3255

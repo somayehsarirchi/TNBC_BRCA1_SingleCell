@@ -1,0 +1,49 @@
+====================================================
+TNBC Single-cell RNA-seq Analysis Pipeline
+STEP 10 — Differential Expression Analysis
+====================================================
+
+Date/time: 2026-08-19 19:45:08
+
+COMPARISON
+----------------------------------------------------
+BRCA1_tumour vs TotalCell
+
+FINDMARKERS PARAMETERS
+----------------------------------------------------
+Test: Wilcoxon rank-sum test
+min.pct: 0.10
+logfc.threshold: 0.25
+only.pos: FALSE
+
+DIRECTION
+----------------------------------------------------
+Positive avg_log2FC = higher in BRCA1_tumour
+Negative avg_log2FC = higher in TotalCell
+Positive delta_pct = greater detection in BRCA1_tumour
+Negative delta_pct = greater detection in TotalCell
+
+DEG SUMMARY
+----------------------------------------------------
+Genes tested: 6115
+Significant DEGs (FDR < 0.05): 5162
+Higher in BRCA1_tumour: 2685
+Higher in TotalCell: 2477
+Non-significant: 953
+
+VOLCANO
+----------------------------------------------------
+Visualization threshold: FDR < 0.05 and |log2FC| >= 0.5
+Labels incorporate expression prevalence and detection difference.
+
+OUTPUTS
+----------------------------------------------------
+C:/Users/asus/Desktop/SingleCell/TNBC_SingleCell_Pipeline/results/DEG_TumorLike_BRCA1_vs_TotalCell_all.csv
+C:/Users/asus/Desktop/SingleCell/TNBC_SingleCell_Pipeline/results/DEG_TumorLike_BRCA1_vs_TotalCell_significant.csv
+C:/Users/asus/Desktop/SingleCell/TNBC_SingleCell_Pipeline/results/DEG_TumorLike_BRCA1_vs_TotalCell_UP.csv
+C:/Users/asus/Desktop/SingleCell/TNBC_SingleCell_Pipeline/results/DEG_TumorLike_BRCA1_vs_TotalCell_DOWN.csv
+C:/Users/asus/Desktop/SingleCell/TNBC_SingleCell_Pipeline/results/DEG_Top20_Upregulated_BRCA1.csv
+C:/Users/asus/Desktop/SingleCell/TNBC_SingleCell_Pipeline/results/DEG_Top20_Downregulated_TotalCell.csv
+
+STEP 10 COMPLETED SUCCESSFULLY.
+====================================================

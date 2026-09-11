@@ -1,0 +1,2 @@
+Stage,Description,Temporal_Clusters,Total_Temporal_Genes,Cluster_1_Genes,Cluster_2_Genes,Stage17D_Background_RNA_Features,Current_Background_RNA_Features,Stage17D_Background_Entrez,Current_Background_Entrez,Background_Difference,Background_Difference_Percent,Cluster_1_Entrez,Cluster_2_Entrez,Reactome_Significant_Pathways,Hallmark_Significant_Pathways,Hallmark_Gene_Sets,Hallmark_Background_Genes
+17E,Independent Reactome and MSigDB Hallmark validation,2,569,53,516,24865,24865,18815,18813,-2,-0.01063,53,497,413,10,50,4226

@@ -1,0 +1,271 @@
+"Enrichment_Group","Redundancy_Group","n_terms"
+"BRCA1_tumour","Translation_Ribosome",15
+"BRCA1_tumour","Tissue_Morphogenesis",4
+"BRCA1_tumour","Nonsense_Mediated_Decay",3
+"BRCA1_tumour","Selenocysteine_Selenoamino_Acid_Metabolism",2
+"BRCA1_tumour","Viral_Response_Infection",2
+"BRCA1_tumour","Independent_Developmental Lineage of Mammary Gland Luminal Epithelial Cells",1
+"BRCA1_tumour","Independent_Regulation of expression of SLITs and ROBOs",1
+"BRCA1_tumour","Independent_Response of EIF2AK4 (GCN2) to amino acid deficiency",1
+"BRCA1_tumour","Independent_camera-type eye development",1
+"BRCA1_tumour","Independent_establishment of mitochondrion localization, microtubule-mediated",1
+"BRCA1_tumour","Independent_eye development",1
+"BRCA1_tumour","Independent_mitochondrion transport along microtubule",1
+"BRCA1_tumour","Melanogenesis",1
+"TotalCell","Migration_Chemotaxis",36
+"TotalCell","Cell_Activation",12
+"TotalCell","Cell_Adhesion",11
+"TotalCell","Inflammatory_Response",8
+"TotalCell","Wound_Healing_Tissue_Repair",8
+"TotalCell","Microbial_Response",7
+"TotalCell","Viral_Response_Infection",5
+"TotalCell","Tissue_Morphogenesis",3
+"TotalCell","Lipid_Response_Metabolism",2
+"TotalCell","TNF_NFkB_Signaling",2
+"TotalCell","Independent_Allograft rejection",1
+"TotalCell","Independent_Antigen processing and presentation",1
+"TotalCell","Independent_Autoimmune thyroid disease",1
+"TotalCell","Independent_CD4-positive, alpha-beta T cell differentiation",1
+"TotalCell","Independent_Class A/1 (Rhodopsin-like receptors)",1
+"TotalCell","Independent_Complement and coagulation cascades",1
+"TotalCell","Independent_Cornified envelope formation",1
+"TotalCell","Independent_Cytokine Signaling in Immune system",1
+"TotalCell","Independent_Cytokine-cytokine receptor interaction",1
+"TotalCell","Independent_Differentiation of Keratinocytes in Interfollicular Epidermis in Mammalian Skin",1
+"TotalCell","Independent_ERK1 and ERK2 cascade",1
+"TotalCell","Independent_Endosomal/Vacuolar pathway",1
+"TotalCell","Independent_Epithelial cell signaling in Helicobacter pylori infection",1
+"TotalCell","Independent_Formation of the cornified envelope",1
+"TotalCell","Independent_G alpha (q) signalling events",1
+"TotalCell","Independent_GPCR ligand binding",1
+"TotalCell","Independent_Graft-versus-host disease",1
+"TotalCell","Independent_HALLMARK_ALLOGRAFT_REJECTION",1
+"TotalCell","Independent_HALLMARK_ANGIOGENESIS",1
+"TotalCell","Independent_HALLMARK_APICAL_JUNCTION",1
+"TotalCell","Independent_HALLMARK_APOPTOSIS",1
+"TotalCell","Independent_HALLMARK_COAGULATION",1
+"TotalCell","Independent_HALLMARK_COMPLEMENT",1
+"TotalCell","Independent_HALLMARK_EPITHELIAL_MESENCHYMAL_TRANSITION",1
+"TotalCell","Independent_HALLMARK_ESTROGEN_RESPONSE_EARLY",1
+"TotalCell","Independent_HALLMARK_HYPOXIA",1
+"TotalCell","Independent_HALLMARK_INFLAMMATORY_RESPONSE",1
+"TotalCell","Independent_HALLMARK_INTERFERON_GAMMA_RESPONSE",1
+"TotalCell","Independent_HALLMARK_KRAS_SIGNALING_DN",1
+"TotalCell","Independent_HALLMARK_KRAS_SIGNALING_UP",1
+"TotalCell","Independent_HALLMARK_MYOGENESIS",1
+"TotalCell","Independent_HALLMARK_P53_PATHWAY",1
+"TotalCell","Independent_HALLMARK_UV_RESPONSE_UP",1
+"TotalCell","Independent_HALLMARK_XENOBIOTIC_METABOLISM",1
+"TotalCell","Independent_HS-GAG degradation",1
+"TotalCell","Independent_Hypertrophic cardiomyopathy",1
+"TotalCell","Independent_IL-17 signaling pathway",1
+"TotalCell","Independent_Immunoregulatory interactions between a Lymphoid and a non-Lymphoid cell",1
+"TotalCell","Independent_Integrin signaling",1
+"TotalCell","Independent_Interferon gamma signaling",1
+"TotalCell","Independent_Keratinization",1
+"TotalCell","Independent_MAPK cascade",1
+"TotalCell","Independent_MHC protein complex assembly",1
+"TotalCell","Independent_NF-kappa B signaling pathway",1
+"TotalCell","Independent_Natural killer cell mediated cytotoxicity",1
+"TotalCell","Independent_Prostate cancer",1
+"TotalCell","Independent_Rheumatoid arthritis",1
+"TotalCell","Independent_Signal transduction by L1",1
+"TotalCell","Independent_Signaling by Interleukins",1
+"TotalCell","Independent_Staphylococcus aureus infection",1
+"TotalCell","Independent_Systemic lupus erythematosus",1
+"TotalCell","Independent_T cell differentiation involved in immune response",1
+"TotalCell","Independent_T cell mediated cytotoxicity",1
+"TotalCell","Independent_T cell mediated immunity",1
+"TotalCell","Independent_T cell proliferation",1
+"TotalCell","Independent_Toxoplasmosis",1
+"TotalCell","Independent_Type I diabetes mellitus",1
+"TotalCell","Independent_acute-phase response",1
+"TotalCell","Independent_adaptive immune response",1
+"TotalCell","Independent_adaptive immune response based on somatic recombination of immune receptors built from immunoglobulin superfamily domains",1
+"TotalCell","Independent_angiogenesis",1
+"TotalCell","Independent_anoikis",1
+"TotalCell","Independent_antigen processing and presentation",1
+"TotalCell","Independent_antigen processing and presentation of endogenous antigen",1
+"TotalCell","Independent_antigen processing and presentation of endogenous peptide antigen",1
+"TotalCell","Independent_antigen processing and presentation of endogenous peptide antigen via MHC class I",1
+"TotalCell","Independent_antigen processing and presentation of exogenous antigen",1
+"TotalCell","Independent_antigen processing and presentation of exogenous peptide antigen",1
+"TotalCell","Independent_antigen processing and presentation of exogenous peptide antigen via MHC class II",1
+"TotalCell","Independent_antigen processing and presentation of peptide antigen",1
+"TotalCell","Independent_antigen processing and presentation of peptide antigen via MHC class I",1
+"TotalCell","Independent_antigen processing and presentation of peptide antigen via MHC class II",1
+"TotalCell","Independent_antigen processing and presentation of peptide or polysaccharide antigen via MHC class II",1
+"TotalCell","Independent_apoptotic signaling pathway",1
+"TotalCell","Independent_blood coagulation",1
+"TotalCell","Independent_blood vessel development",1
+"TotalCell","Independent_cell killing",1
+"TotalCell","Independent_cell surface receptor protein tyrosine kinase signaling pathway",1
+"TotalCell","Independent_cellular response to biotic stimulus",1
+"TotalCell","Independent_cellular response to endogenous stimulus",1
+"TotalCell","Independent_cellular response to fatty acid",1
+"TotalCell","Independent_cellular response to growth factor stimulus",1
+"TotalCell","Independent_cellular response to lipopolysaccharide",1
+"TotalCell","Independent_cellular response to low-density lipoprotein particle stimulus",1
+"TotalCell","Independent_cellular response to oxygen-containing compound",1
+"TotalCell","Independent_cellular response to tumor necrosis factor",1
+"TotalCell","Independent_chemokine production",1
+"TotalCell","Independent_circulatory system development",1
+"TotalCell","Independent_coagulation",1
+"TotalCell","Independent_cytokine production",1
+"TotalCell","Independent_cytokine production involved in immune response",1
+"TotalCell","Independent_decidualization",1
+"TotalCell","Independent_defense response to Gram-positive bacterium",1
+"TotalCell","Independent_defense response to other organism",1
+"TotalCell","Independent_defense response to symbiont",1
+"TotalCell","Independent_dendritic cell differentiation",1
+"TotalCell","Independent_endocytosis",1
+"TotalCell","Independent_enzyme-linked receptor protein signaling pathway",1
+"TotalCell","Independent_epidermis development",1
+"TotalCell","Independent_epithelial cell differentiation",1
+"TotalCell","Independent_epithelium development",1
+"TotalCell","Independent_fat cell differentiation",1
+"TotalCell","Independent_fibroblast apoptotic process",1
+"TotalCell","Independent_foam cell differentiation",1
+"TotalCell","Independent_granulocyte migration",1
+"TotalCell","Independent_hemopoiesis",1
+"TotalCell","Independent_hemostasis",1
+"TotalCell","Independent_humoral immune response",1
+"TotalCell","Independent_immune effector process",1
+"TotalCell","Independent_import into cell",1
+"TotalCell","Independent_innate immune response",1
+"TotalCell","Independent_interleukin-1 beta production",1
+"TotalCell","Independent_interleukin-1 production",1
+"TotalCell","Independent_interleukin-4 production",1
+"TotalCell","Independent_interleukin-6 production",1
+"TotalCell","Independent_intrinsic apoptotic signaling pathway",1
+"TotalCell","Independent_keratinization",1
+"TotalCell","Independent_keratinocyte differentiation",1
+"TotalCell","Independent_leukocyte activation",1
+"TotalCell","Independent_leukocyte activation involved in immune response",1
+"TotalCell","Independent_leukocyte apoptotic process",1
+"TotalCell","Independent_leukocyte differentiation",1
+"TotalCell","Independent_leukocyte proliferation",1
+"TotalCell","Independent_lipid storage",1
+"TotalCell","Independent_lymphocyte activation",1
+"TotalCell","Independent_lymphocyte activation involved in immune response",1
+"TotalCell","Independent_lymphocyte migration",1
+"TotalCell","Independent_lymphocyte proliferation",1
+"TotalCell","Independent_maternal process involved in female pregnancy",1
+"TotalCell","Independent_mononuclear cell differentiation",1
+"TotalCell","Independent_mononuclear cell proliferation",1
+"TotalCell","Independent_multi-multicellular organism process",1
+"TotalCell","Independent_multi-organism reproductive process",1
+"TotalCell","Independent_myeloid leukocyte differentiation",1
+"TotalCell","Independent_negative regulation of apoptotic process",1
+"TotalCell","Independent_negative regulation of blood coagulation",1
+"TotalCell","Independent_negative regulation of cell development",1
+"TotalCell","Independent_negative regulation of cell killing",1
+"TotalCell","Independent_negative regulation of cell population proliferation",1
+"TotalCell","Independent_negative regulation of coagulation",1
+"TotalCell","Independent_negative regulation of cytokine production",1
+"TotalCell","Independent_negative regulation of defense response",1
+"TotalCell","Independent_negative regulation of endothelial cell proliferation",1
+"TotalCell","Independent_negative regulation of fat cell differentiation",1
+"TotalCell","Independent_negative regulation of hemopoiesis",1
+"TotalCell","Independent_negative regulation of hemostasis",1
+"TotalCell","Independent_negative regulation of immune system process",1
+"TotalCell","Independent_negative regulation of leukocyte apoptotic process",1
+"TotalCell","Independent_negative regulation of leukocyte differentiation",1
+"TotalCell","Independent_negative regulation of leukocyte mediated cytotoxicity",1
+"TotalCell","Independent_negative regulation of multicellular organismal process",1
+"TotalCell","Independent_negative regulation of natural killer cell mediated cytotoxicity",1
+"TotalCell","Independent_negative regulation of natural killer cell mediated immunity",1
+"TotalCell","Independent_negative regulation of response to external stimulus",1
+"TotalCell","Independent_negative regulation of transport",1
+"TotalCell","Independent_negative regulation of type II interferon production",1
+"TotalCell","Independent_neutrophil migration",1
+"TotalCell","Independent_nutrient storage",1
+"TotalCell","Independent_peptide antigen assembly with MHC protein complex",1
+"TotalCell","Independent_plasma membrane organization",1
+"TotalCell","Independent_platelet activation",1
+"TotalCell","Independent_platelet aggregation",1
+"TotalCell","Independent_positive regulation of CD4-positive, alpha-beta T cell differentiation",1
+"TotalCell","Independent_positive regulation of ERK1 and ERK2 cascade",1
+"TotalCell","Independent_positive regulation of MAPK cascade",1
+"TotalCell","Independent_positive regulation of actin filament polymerization",1
+"TotalCell","Independent_positive regulation of cell differentiation",1
+"TotalCell","Independent_positive regulation of cell junction assembly",1
+"TotalCell","Independent_positive regulation of cell population proliferation",1
+"TotalCell","Independent_positive regulation of cytokine production",1
+"TotalCell","Independent_positive regulation of developmental process",1
+"TotalCell","Independent_positive regulation of immune response",1
+"TotalCell","Independent_positive regulation of immune system process",1
+"TotalCell","Independent_positive regulation of intracellular signal transduction",1
+"TotalCell","Independent_positive regulation of leukocyte activation",1
+"TotalCell","Independent_positive regulation of lymphocyte activation",1
+"TotalCell","Independent_positive regulation of phosphorylation",1
+"TotalCell","Independent_positive regulation of protein modification process",1
+"TotalCell","Independent_positive regulation of protein phosphorylation",1
+"TotalCell","Independent_positive regulation of response to external stimulus",1
+"TotalCell","Independent_positive regulation of transport",1
+"TotalCell","Independent_regeneration",1
+"TotalCell","Independent_regulation of ERK1 and ERK2 cascade",1
+"TotalCell","Independent_regulation of MAPK cascade",1
+"TotalCell","Independent_regulation of T cell proliferation",1
+"TotalCell","Independent_regulation of apoptotic signaling pathway",1
+"TotalCell","Independent_regulation of blood coagulation",1
+"TotalCell","Independent_regulation of body fluid levels",1
+"TotalCell","Independent_regulation of calcium ion import",1
+"TotalCell","Independent_regulation of cell junction assembly",1
+"TotalCell","Independent_regulation of chemokine production",1
+"TotalCell","Independent_regulation of coagulation",1
+"TotalCell","Independent_regulation of cytokine production",1
+"TotalCell","Independent_regulation of cytokine production involved in immune response",1
+"TotalCell","Independent_regulation of defense response",1
+"TotalCell","Independent_regulation of fat cell differentiation",1
+"TotalCell","Independent_regulation of fibroblast apoptotic process",1
+"TotalCell","Independent_regulation of hemopoiesis",1
+"TotalCell","Independent_regulation of hemostasis",1
+"TotalCell","Independent_regulation of immune effector process",1
+"TotalCell","Independent_regulation of immune response",1
+"TotalCell","Independent_regulation of interleukin-1 beta production",1
+"TotalCell","Independent_regulation of interleukin-1 production",1
+"TotalCell","Independent_regulation of interleukin-4 production",1
+"TotalCell","Independent_regulation of interleukin-6 production",1
+"TotalCell","Independent_regulation of intrinsic apoptotic signaling pathway",1
+"TotalCell","Independent_regulation of leukocyte activation",1
+"TotalCell","Independent_regulation of leukocyte apoptotic process",1
+"TotalCell","Independent_regulation of leukocyte differentiation",1
+"TotalCell","Independent_regulation of lipid storage",1
+"TotalCell","Independent_regulation of lymphocyte activation",1
+"TotalCell","Independent_regulation of lymphocyte migration",1
+"TotalCell","Independent_regulation of myeloid leukocyte differentiation",1
+"TotalCell","Independent_regulation of neutrophil migration",1
+"TotalCell","Independent_regulation of platelet activation",1
+"TotalCell","Independent_regulation of protein localization to membrane",1
+"TotalCell","Independent_regulation of proteolysis",1
+"TotalCell","Independent_regulation of response to external stimulus",1
+"TotalCell","Independent_regulation of secretion",1
+"TotalCell","Independent_regulation of steroid biosynthetic process",1
+"TotalCell","Independent_regulation of type II interferon production",1
+"TotalCell","Independent_regulation of vasoconstriction",1
+"TotalCell","Independent_regulation of vesicle-mediated transport",1
+"TotalCell","Independent_response to corticosteroid",1
+"TotalCell","Independent_response to cytokine",1
+"TotalCell","Independent_response to decreased oxygen levels",1
+"TotalCell","Independent_response to glucocorticoid",1
+"TotalCell","Independent_response to growth factor",1
+"TotalCell","Independent_response to hypoxia",1
+"TotalCell","Independent_response to lipopolysaccharide",1
+"TotalCell","Independent_response to lipoprotein particle",1
+"TotalCell","Independent_response to nutrient",1
+"TotalCell","Independent_response to oxygen levels",1
+"TotalCell","Independent_response to peptide",1
+"TotalCell","Independent_response to steroid hormone",1
+"TotalCell","Independent_response to toxic substance",1
+"TotalCell","Independent_response to tumor necrosis factor",1
+"TotalCell","Independent_response to vitamin",1
+"TotalCell","Independent_response to vitamin D",1
+"TotalCell","Independent_secretion",1
+"TotalCell","Independent_skin development",1
+"TotalCell","Independent_system process",1
+"TotalCell","Independent_tube development",1
+"TotalCell","Independent_type II interferon production",1
+"TotalCell","Independent_vasculature development",1
+"TotalCell","Independent_vasoconstriction",1
+"TotalCell","Independent_zymogen activation",1

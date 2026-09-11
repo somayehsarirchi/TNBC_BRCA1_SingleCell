@@ -1,0 +1,8 @@
+"Check","Result"
+"Input_file_exists",TRUE
+"Input_has_rows",TRUE
+"Required_columns_present",TRUE
+"Unique_gene_ids",TRUE
+"NonNA_Morans_I_available",TRUE
+"NonNA_p_values_available",TRUE
+"NonNA_q_values_available",TRUE

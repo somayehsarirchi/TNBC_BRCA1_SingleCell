@@ -1,0 +1,6 @@
+"QC_Check","Result"
+"No duplicate redundancy groups within direction",TRUE
+"Maximum 10 representative terms per direction",TRUE
+"Correct NES direction",TRUE
+"No missing redundancy groups",TRUE
+"Both enrichment directions represented",TRUE

@@ -1,0 +1,10 @@
+Metric,Value
+Comparison,BRCA1_tumour vs TotalCell
+BRCA1_tumour cells,5196
+TotalCell cells,14860
+Genes tested,6115
+Significant DEGs,5162
+Higher in BRCA1_tumour,2685
+Higher in TotalCell,2477
+Non-significant genes,953
+Volcano labels,16

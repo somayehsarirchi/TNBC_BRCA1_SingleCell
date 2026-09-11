@@ -1,0 +1,6 @@
+"Database","Enrichment_Group","n"
+"GO_BP","BRCA1_tumour",3
+"GO_BP","TotalCell",9
+"Hallmark","TotalCell",1
+"KEGG","BRCA1_tumour",1
+"Reactome","BRCA1_tumour",6

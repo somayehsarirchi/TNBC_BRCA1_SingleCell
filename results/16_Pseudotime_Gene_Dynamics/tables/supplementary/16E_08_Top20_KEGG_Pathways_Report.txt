@@ -1,0 +1,38 @@
+============================================================
+TNBC Single-Cell Analysis Pipeline
+Stage 16E: Top 20 KEGG Pathways
+============================================================
+
+Generated: 2026-09-10 16:32:10
+
+Stage 16D significant pathways: 42
+Valid pathways: 42
+
+Top pathways:
+
+1. hsa03010 | Ribosome | adjusted p = 8.702e-45
+2. hsa05012 | Parkinson disease | adjusted p = 1.816e-28
+3. hsa05171 | Coronavirus disease | adjusted p = 9.813e-26
+4. hsa05020 | Prion disease | adjusted p = 6.384e-25
+5. hsa00190 | Oxidative phosphorylation | adjusted p = 9.81e-23
+6. hsa05014 | Amyotrophic lateral sclerosis | adjusted p = 2.048e-20
+7. hsa05016 | Huntington disease | adjusted p = 3.135e-20
+8. hsa05415 | Diabetic cardiomyopathy | adjusted p = 2.212e-15
+9. hsa05208 | Chemical carcinogenesis - reactive oxygen species | adjusted p = 9.203e-15
+10. hsa05010 | Alzheimer disease | adjusted p = 9.203e-15
+11. hsa04141 | Protein processing in endoplasmic reticulum | adjusted p = 3.366e-11
+12. hsa05022 | Pathways of neurodegeneration - multiple diseases | adjusted p = 9.065e-11
+13. hsa04932 | Non-alcoholic fatty liver disease | adjusted p = 5.064e-10
+14. hsa03040 | Spliceosome | adjusted p = 2.416e-09
+15. hsa04714 | Thermogenesis | adjusted p = 4.249e-09
+16. hsa03050 | Proteasome | adjusted p = 1.292e-08
+17. hsa04110 | Cell cycle | adjusted p = 2.191e-07
+18. hsa05169 | Epstein-Barr virus infection | adjusted p = 9.699e-07
+19. hsa05168 | Herpes simplex virus 1 infection | adjusted p = 1.612e-06
+20. hsa04612 | Antigen processing and presentation | adjusted p = 1.147e-05
+
+============================================================
+Stage 16E performs interpretation and prioritization only.
+KEGG enrichment was not rerun.
+Stage 15 through Stage 16D remained frozen.
+============================================================

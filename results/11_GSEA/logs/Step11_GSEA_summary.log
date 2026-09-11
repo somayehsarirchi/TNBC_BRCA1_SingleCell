@@ -1,0 +1,51 @@
+====================================================
+STEP 11 — GSEA SUMMARY
+====================================================
+
+Date/time: 2026-08-19 18:15:53
+
+RANKED GENE LIST
+----------------------------------------------------
+Total ranked genes: 6115
+Positive avg_log2FC: 2686
+Negative avg_log2FC: 3429
+Zero avg_log2FC: 0
+
+ENTREZ ID MAPPING
+----------------------------------------------------
+Input ranked genes: 6115
+Genes mapped to Entrez: 5846
+Mapping rate: 95.6%
+
+GO BIOLOGICAL PROCESS GSEA
+----------------------------------------------------
+Total GO-BP pathways: 278
+BRCA1_tumour-enriched pathways: 8
+TotalCell-enriched pathways: 270
+
+REACTOME GSEA
+----------------------------------------------------
+Total Reactome pathways: 46
+BRCA1_tumour-enriched pathways: 24
+TotalCell-enriched pathways: 22
+
+OUTPUT DIRECTORY
+----------------------------------------------------
+Step 11 directory: C:/Users/asus/Desktop/SingleCell/TNBC_SingleCell_Pipeline/results/Step11_GSEA
+GO-BP results: C:/Users/asus/Desktop/SingleCell/TNBC_SingleCell_Pipeline/results/Step11_GSEA/GO_BP
+Reactome results: C:/Users/asus/Desktop/SingleCell/TNBC_SingleCell_Pipeline/results/Step11_GSEA/Reactome
+Leading-edge results: C:/Users/asus/Desktop/SingleCell/TNBC_SingleCell_Pipeline/results/Step11_GSEA/LeadingEdge
+Plots: C:/Users/asus/Desktop/SingleCell/TNBC_SingleCell_Pipeline/results/Step11_GSEA/Plots
+
+PLOTTING
+----------------------------------------------------
+X-axis: Normalized Enrichment Score (NES)
+Point size: Gene set size
+Pathways displayed: Top 15 per direction
+BRCA1_tumour: NES > 0
+TotalCell: NES < 0
+Pathway significance threshold for reporting: adjusted P < 0.05
+
+====================================================
+STEP 11 — GSEA COMPLETED
+====================================================

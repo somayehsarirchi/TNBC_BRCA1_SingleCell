@@ -1,0 +1,16 @@
+"metric","value"
+"Original project exists","TRUE"
+"GitHub repository exists","TRUE"
+"Repository file count","216"
+"Repository directory count","182"
+"Repository size (MB)","0.902"
+"Total R scripts","28"
+"Active R scripts","27"
+"Archived R scripts","1"
+"RDS files","0"
+"Files >100 MB","0"
+"CopyKAT batch internals","0"
+"Portability audit records","3"
+"Missing directories",NA
+"Missing key files",NA
+"Overall final status","PASS"

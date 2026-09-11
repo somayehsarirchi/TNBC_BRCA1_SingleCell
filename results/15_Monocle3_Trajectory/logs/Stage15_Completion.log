@@ -1,0 +1,68 @@
+2026-09-09 08:12:03 | ============================================ 
+2026-09-09 08:12:04 | STAGE 15 STARTED 
+2026-09-09 08:12:04 | Monocle3 Trajectory and Pseudotime Analysis 
+2026-09-09 08:12:05 | Final clean-rerun version 
+2026-09-09 08:12:05 | ============================================ 
+2026-09-09 08:12:07 | Input Seurat object found: C:/Users/asus/Desktop/TNBC_SingleCell_Pipeline/objects//TNBC_Epithelial_CopyKAT.rds 
+2026-09-09 08:12:08 | Loading Seurat object... 
+2026-09-09 08:12:16 | Seurat object loaded successfully. 
+2026-09-09 08:12:16 | Cells: 22145 
+2026-09-09 08:12:16 | Features: 24865 
+2026-09-09 08:12:16 | CNV_Status normalized successfully. 
+2026-09-09 08:12:16 | Default assay set to RNA. 
+2026-09-09 08:12:16 | Seurat UMAP found: 22145 cells x 2 dimensions. 
+2026-09-09 08:12:16 | Extracting RNA counts... 
+2026-09-09 08:12:17 | RNA counts dimensions: 24865 genes x 22145 cells. 
+2026-09-09 08:12:17 | Constructing Monocle3 cell_data_set... 
+2026-09-09 08:12:19 | Monocle3 cell_data_set created. 
+2026-09-09 08:12:19 | Running Monocle3 preprocessing... 
+2026-09-09 08:12:53 | Monocle3 preprocessing completed. 
+2026-09-09 08:12:53 | Transferring Seurat UMAP into Monocle3... 
+2026-09-09 08:12:53 | Seurat UMAP transferred successfully. 
+2026-09-09 08:12:53 | Running Monocle3 clustering... 
+2026-09-09 08:13:01 | Monocle3 clustering completed. 
+2026-09-09 08:13:01 | Learning partition-aware principal graph... 
+2026-09-09 08:13:22 | Principal graph learning completed. 
+2026-09-09 08:13:22 | Number of Monocle3 partitions: 5 
+2026-09-09 08:13:22 | Extracting principal graph projection... 
+2026-09-09 08:16:02 | Extracting principal graph projection... 
+2026-09-09 08:16:15 | Principal graph vertices: 198 
+2026-09-09 08:16:30 | Partition CNV statistics calculated. 
+2026-09-09 08:16:35 | Selected trajectory partition: 2 
+2026-09-09 08:16:35 | Normal_like cells: 607 
+2026-09-09 08:16:36 | Tumor_like cells: 5201 
+2026-09-09 08:16:46 | Selected root node: Y_48 
+2026-09-09 08:16:47 | Root selection method: Normal_like_leaf_node 
+2026-09-09 08:16:48 | Ordering cells from selected Normal-like root... 
+2026-09-09 08:16:49 | Cell ordering completed. 
+2026-09-09 08:17:08 | Preparing trajectory plotting object... 
+2026-09-09 08:17:12 | Generating trajectory CNV-status figure... 
+2026-09-09 08:18:20 | Trajectory CNV-status PDF saved. 
+2026-09-09 08:18:21 | Generating trajectory pseudotime figure... 
+2026-09-09 08:18:28 | Trajectory pseudotime PDF saved. 
+2026-09-09 08:18:29 | Transferring pseudotime back to Seurat metadata... 
+2026-09-09 08:18:33 | Saving updated Seurat trajectory object... 
+2026-09-09 08:19:30 | Updated Seurat object saved: C:/Users/asus/Desktop/TNBC_SingleCell_Pipeline/objects//TNBC_Epithelial_Trajectory_Added.rds 
+2026-09-09 08:19:30 | Saving complete Monocle3 CDS... 
+2026-09-09 08:21:18 | Complete Monocle3 CDS saved: C:/Users/asus/Desktop/TNBC_SingleCell_Pipeline/objects//TNBC_Monocle3_CDS_Final 
+2026-09-09 08:21:18 | Validation results RDS saved: C:/Users/asus/Desktop/TNBC_SingleCell_Pipeline/objects//Stage15_Pseudotime_Validation_Results.rds 
+2026-09-09 08:21:18 | All expected Stage 15 output files are present. 
+2026-09-09 08:21:18 | Final validation: PASSED. 
+2026-09-09 08:21:18 | ============================================ 
+2026-09-09 08:21:18 | STAGE 15 COMPLETED SUCCESSFULLY 
+2026-09-09 08:21:18 | ============================================ 
+2026-09-09 08:21:18 | Selected partition: 2 
+2026-09-09 08:21:18 | Selected root node: Y_48 
+2026-09-09 08:21:18 | Root selection method: Normal_like_leaf_node 
+2026-09-09 08:21:18 | Finite pseudotime cells: 6735 
+2026-09-09 08:21:18 | Infinite pseudotime cells: 15410 
+2026-09-09 08:21:18 | NA pseudotime cells: 0 
+2026-09-09 08:21:18 | Finite Normal_like cells in selected partition: 607 
+2026-09-09 08:21:18 | Finite Tumor_like cells in selected partition: 5201 
+2026-09-09 08:21:18 | Wilcoxon P value: 0e+00 
+2026-09-09 08:21:18 | Updated Seurat object: C:/Users/asus/Desktop/TNBC_SingleCell_Pipeline/objects//TNBC_Epithelial_Trajectory_Added.rds 
+2026-09-09 08:21:18 | Monocle3 CDS: C:/Users/asus/Desktop/TNBC_SingleCell_Pipeline/objects//TNBC_Monocle3_CDS_Final 
+2026-09-09 08:21:18 | Validation results RDS: C:/Users/asus/Desktop/TNBC_SingleCell_Pipeline/objects//Stage15_Pseudotime_Validation_Results.rds 
+2026-09-09 08:21:18 | Stage 15 result directory: C:/Users/asus/Desktop/TNBC_BRCA1_SingleCell/results/15_Monocle3_Trajectory 
+2026-09-09 08:21:18 | Final validation: PASSED 
+2026-09-09 08:21:18 | ============================================ 

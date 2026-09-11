@@ -1,0 +1,56 @@
+====================================================
+TNBC Single-cell RNA-seq Analysis Pipeline
+STEP 12 — Integrated GSEA Pathway Prioritization
+====================================================
+
+Date/time: 2026-09-08 08:23:54
+
+COMPARISON
+----------------------------------------------------
+BRCA1_tumour vs TotalCell
+
+INPUT DATABASES
+----------------------------------------------------
+GO Biological Process
+Reactome
+KEGG
+MSigDB Hallmark
+
+SIGNIFICANCE
+----------------------------------------------------
+Step 11 adjusted p-value criterion: p.adjust < 0.05
+No additional significance filtering was applied.
+No new differential expression analysis was performed.
+No new GSEA was performed.
+
+INTEGRATED RESULTS
+----------------------------------------------------
+Total significant terms: 375
+BRCA1_tumour-associated terms: 34
+TotalCell-associated terms: 341
+
+CROSS-DATABASE RECURRENCE
+----------------------------------------------------
+Exact recurring terms across >=2 databases: 0
+Recurring terms in BRCA1_tumour: 0
+Recurring terms in TotalCell: 0
+
+INTERPRETATION
+----------------------------------------------------
+NES > 0 = pathway enriched toward BRCA1_tumour
+NES < 0 = pathway enriched toward TotalCell
+p.adjust < 0.05 = statistically significant term
+
+QUALITY CONTROL
+----------------------------------------------------
+Expected databases: GO_BP, Reactome, KEGG, Hallmark
+Observed databases: GO_BP, Hallmark, KEGG, Reactome
+Directional NES mismatches: 0
+Integrated dataset rows: 375
+Output validation: PASSED
+Additional validation: PASSED
+
+Recurrence plot: NOT GENERATED — no recurring terms identified
+
+STEP 12 COMPLETED SUCCESSFULLY.
+====================================================

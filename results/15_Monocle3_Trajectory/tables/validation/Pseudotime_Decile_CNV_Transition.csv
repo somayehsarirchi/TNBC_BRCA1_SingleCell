@@ -1,0 +1,14 @@
+"Pseudotime_Decile","CNV_Status","N","Fraction"
+1,"Normal_like",485,0.834767641996558
+1,"Tumor_like",96,0.165232358003442
+2,"Normal_like",121,0.208261617900172
+2,"Tumor_like",460,0.791738382099828
+3,"Normal_like",1,0.00172117039586919
+3,"Tumor_like",580,0.998278829604131
+4,"Tumor_like",581,1
+5,"Tumor_like",581,1
+6,"Tumor_like",581,1
+7,"Tumor_like",581,1
+8,"Tumor_like",581,1
+9,"Tumor_like",580,1
+10,"Tumor_like",580,1

@@ -1,0 +1,32 @@
+============================================================
+STAGE 17D: EXPORT AND ARCHIVING
+============================================================
+Project directory: C:/Users/asus/Desktop/TNBC_BRCA1_SingleCell
+Stage17D RDS found.
+Stage17D RDS loaded successfully.
+Required Stage17D fields verified.
+Temporal genes: 569
+Temporal clusters: 2
+GO enrichment rows: 275
+KEGG enrichment rows: 0
+KEGG enrichment results: no significant pathways.
+============================================================
+STAGE 17D EXPORT COMPLETED SUCCESSFULLY
+============================================================
+Temporal genes: 569
+GO rows exported: 275
+GO Cluster 1 rows: 199
+GO Cluster 2 rows: 76
+KEGG rows: 0
+Validation: 19/19
+Main tables exported: 5
+Supplementary tables exported: 7
+Validation tables exported: 1
+Central RDS preserved: C:/Users/asus/Desktop/TNBC_BRCA1_SingleCell/objects/Stage17D_Biological_Interpretation_Results.rds
+No enrichment analysis was rerun.
+No trajectory reconstruction was performed.
+No root selection was performed.
+No pseudotime recalculation was performed.
+Stage 17B remained frozen.
+Stage 17C remained frozen.
+============================================================

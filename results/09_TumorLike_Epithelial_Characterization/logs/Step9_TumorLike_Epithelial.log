@@ -1,0 +1,35 @@
+TNBC Single-cell RNA-seq Analysis Pipeline
+Step 9: Tumor-like epithelial compartment analysis
+Date: 2026-08-15 14:50:27.809801
+
+Summary
+-------
+Total epithelial cells: 22145
+Tumor-like epithelial cells: 20056
+Number of tumor-like epithelial subtypes: 13
+
+Tumor-like cells per group
+-------------------------
+
+BRCA1_tumour    TotalCell 
+        5196        14860 
+
+Output objects
+--------------
+C:/Users/asus/Desktop/SingleCell/TNBC_SingleCell_Pipeline_Test/objects/TNBC_Epithelial_TumorLike.rds
+
+Key result tables
+-----------------
+C:/Users/asus/Desktop/SingleCell/TNBC_SingleCell_Pipeline_Test/results/CNV_by_Group.csv
+C:/Users/asus/Desktop/SingleCell/TNBC_SingleCell_Pipeline_Test/results/CNV_by_Group_Percent.csv
+C:/Users/asus/Desktop/SingleCell/TNBC_SingleCell_Pipeline_Test/results/TumorLike_EpithelialSubtype_by_Group.csv
+C:/Users/asus/Desktop/SingleCell/TNBC_SingleCell_Pipeline_Test/results/TumorLike_EpithelialSubtype_Percent_by_Group.csv
+
+Key plots
+---------
+C:/Users/asus/Desktop/SingleCell/TNBC_SingleCell_Pipeline_Test/results/plots/UMAP_Epithelial_CNV_Status.pdf
+C:/Users/asus/Desktop/SingleCell/TNBC_SingleCell_Pipeline_Test/results/plots/UMAP_TumorLike_Epithelial_Subtypes.pdf
+C:/Users/asus/Desktop/SingleCell/TNBC_SingleCell_Pipeline_Test/results/plots/Barplot_CNV_by_Group.pdf
+C:/Users/asus/Desktop/SingleCell/TNBC_SingleCell_Pipeline_Test/results/plots/Barplot_TumorLike_Epithelial_Subtypes_by_Group.pdf
+
+Step 9 completed successfully.

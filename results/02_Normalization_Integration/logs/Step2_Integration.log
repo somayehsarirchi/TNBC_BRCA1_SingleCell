@@ -1,0 +1,19 @@
+TNBC Single-cell RNA-seq Analysis Pipeline
+Step 2: Normalization and data integration
+Date: 2026-07-31 19:47:18.871988
+
+Summary
+-------
+TotalCell cells: 21253
+BRCA1 tumour cells: 33225
+Integrated cells: 54478
+Integrated features (integrated assay): 2000
+RNA features: 24865
+Number of integration features: 2000
+
+Objects saved
+-------------
+C:/Users/asus/Desktop/SingleCell/TNBC_SingleCell_Pipeline_Test/objects/TNBC_Integration_Anchors.rds
+C:/Users/asus/Desktop/SingleCell/TNBC_SingleCell_Pipeline_Test/objects/TNBC_Integrated.rds
+
+Step 2 completed successfully.

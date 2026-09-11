@@ -1,0 +1,29 @@
+Item,Value
+Stage,17E
+Description,Independent Reactome and MSigDB Hallmark validation of temporal gene-expression clusters
+Stage17D_RDS,C:/Users/asus/Desktop/TNBC_BRCA1_SingleCell/objects/Stage17D_Biological_Interpretation_Results.rds
+Seurat_Source,C:/Users/asus/Desktop/TNBC_SingleCell_Pipeline/objects/TNBC_Epithelial_CopyKAT.rds
+Stage17D_Background_RNA_Features,24865
+Current_Background_RNA_Features,24865
+Stage17D_Background_Entrez,18815
+Current_Background_Entrez,18813
+Background_Entrez_Difference,-2
+Background_Entrez_Difference_Percent,-0.01063
+Background_Source_Stage17D,RNA_assay_features_from_Stage17_source_Seurat_object
+Background_Mapping_Method,SYMBOL -> ENTREZID using org.Hs.eg.db
+Temporal_Mapping_Method,Subset of the canonical background SYMBOL -> ENTREZID mapping
+Hallmark_Retrieval_Method,"msigdbr(db_species='HS', species='Homo sapiens', collection='H')"
+Hallmark_Background_Genes,4226
+Hallmark_Gene_Sets,50
+Hallmark_Unique_Genes,4384
+Total_Temporal_Genes,569
+Temporal_Cluster_1_Genes,53
+Temporal_Cluster_2_Genes,516
+Temporal_Cluster_1_Entrez,53
+Temporal_Cluster_2_Entrez,497
+R_Version,R version 4.5.2 (2025-10-31 ucrt)
+Seurat_Version,5.5.0
+clusterProfiler_Version,4.18.4
+ReactomePA_Version,1.54.0
+org.Hs.eg.db_Version,3.22.0
+msigdbr_Version,26.1.1

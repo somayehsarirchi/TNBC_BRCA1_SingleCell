@@ -1,0 +1,37 @@
+TNBC Single-cell RNA-seq Analysis Pipeline
+Step 4: Cell-type annotation
+Date: 2026-07-31 21:05:26.540488
+
+Summary
+-------
+Number of cells: 54478
+Number of clusters: 22
+Number of SingleR cell types: 31
+Number of manual cell types: 10
+
+Cells per manual cell type
+--------------------------
+
+                       B_cell                           CMP                   DC-Monocyte             Endothelial_cells 
+                         4318                            89                           878                          1123 
+             Epithelial_cells Fibroblasts-Tissue_stem_cells                     iPS_cells                    Macrophage 
+                        22145                          1878                          4286                          5078 
+              NK_cell-T_cells              Pre-B_cell_CD34- 
+                        14172                           511 
+
+Cells per biological group
+--------------------------
+
+BRCA1_tumour    TotalCell 
+       33225        21253 
+
+Objects and outputs generated
+-----------------------------
+C:/Users/asus/Desktop/SingleCell/TNBC_SingleCell_Pipeline_Test/results/TNBC_cluster_markers_all.csv
+C:/Users/asus/Desktop/SingleCell/TNBC_SingleCell_Pipeline_Test/results/TNBC_cluster_markers_logFC2.csv
+C:/Users/asus/Desktop/SingleCell/TNBC_SingleCell_Pipeline_Test/results/SingleR_CellType_Annotations.csv
+C:/Users/asus/Desktop/SingleCell/TNBC_SingleCell_Pipeline_Test/results/SingleR_CellType_Abundance.csv
+C:/Users/asus/Desktop/SingleCell/TNBC_SingleCell_Pipeline_Test/results/UMAP_SingleR_CellTypes.pdf
+C:/Users/asus/Desktop/SingleCell/TNBC_SingleCell_Pipeline_Test/results/UMAP_Manual_CellTypes_Split.pdf
+
+Step 4 completed successfully.

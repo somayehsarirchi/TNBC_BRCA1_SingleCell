@@ -1,0 +1,11 @@
+"Source","Target","Difference"
+"Fibroblasts-Tissue_stem_cells","Macrophage",0.662823719594235
+"DC-Monocyt","Pre-B_cell_CD34-",0.636350803023739
+"Macrophage","Macrophage",0.517236061917928
+"Fibroblasts-Tissue_stem_cells","iPS_cells",0.51514583030778
+"Macrophage","Pre-B_cell_CD34-",0.476193717033441
+"Macrophage","Fibroblasts-Tissue_stem_cells",0.298862039551879
+"Fibroblasts-Tissue_stem_cells","Fibroblasts-Tissue_stem_cells",0.291648244507404
+"DC-Monocyt","Macrophage",0.261205560313844
+"Pre-B_cell_CD34-","Pre-B_cell_CD34-",0.257455270156835
+"Macrophage","DC-Monocyt",0.200831516694829

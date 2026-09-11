@@ -1,0 +1,48 @@
+============================================================
+TNBC Single-Cell Analysis Pipeline
+Stage 17: Pseudotime-Dependent Temporal Gene Dynamics
+============================================================
+
+Completion time: 2026-09-10 17:16:53
+
+Frozen Stage 15 CDS: C:/Users/asus/Desktop/TNBC_SingleCell_Pipeline/objects/TNBC_Monocle3_CDS_Final
+
+Frozen Stage 15 CDS cells: 22145
+
+Frozen Stage 15 CDS genes: 24865
+
+Finite Stage 15 pseudotime cells: 6735
+
+Stage 16B analysis cells: 6735
+
+Final synchronized cells: 6735
+
+Genes tested: 24865
+
+Genes with finite Spearman rho: 21610
+
+Stage 16B strong trajectory genes: 2908
+
+Stage 16B strong genes present in expression: 2908
+
+Significant temporal genes: 1653
+
+Strong temporal genes: 569
+
+Pseudotime source: frozen Stage 15 CDS
+Trajectory reconstruction: NOT PERFORMED
+Root selection: NOT PERFORMED
+Pseudotime recalculation: NOT PERFORMED
+Stage 16B cell list used only for cell synchronization.
+
+Correlation method: Spearman rank correlation
+Multiple-testing correction: Benjamini-Hochberg FDR
+Significant threshold: FDR < 0.05 and |rho| >= 0.20
+Strong threshold: FDR < 0.05 and |rho| >= 0.30
+Sparse expression chunks converted to ordinary matrices before ranking.
+
+Stage 15 remained frozen.
+No upstream analytical stage was rerun.
+
+STATUS: STAGE 17 COMPLETED SUCCESSFULLY
+============================================================

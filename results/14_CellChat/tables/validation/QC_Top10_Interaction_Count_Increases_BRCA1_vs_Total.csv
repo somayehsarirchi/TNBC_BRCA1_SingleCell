@@ -1,0 +1,11 @@
+"Source","Target","Difference"
+"Fibroblasts-Tissue_stem_cells","Macrophage",23
+"Macrophage","Macrophage",16
+"Fibroblasts-Tissue_stem_cells","Endothelial_cells",12
+"Fibroblasts-Tissue_stem_cells","DC-Monocyt",10
+"Tumor_Epithelial","iPS_cells",9
+"DC-Monocyt","Macrophage",9
+"Pre-B_cell_CD34-","Macrophage",9
+"Fibroblasts-Tissue_stem_cells","Pre-B_cell_CD34-",8
+"Fibroblasts-Tissue_stem_cells","Tumor_Epithelial",8
+"Macrophage","DC-Monocyt",7

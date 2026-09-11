@@ -1,0 +1,47 @@
+====================================================
+TNBC Single-cell RNA-seq Analysis Pipeline
+STAGE 13 — GSEA Biological Interpretation
+Representative GSEA Pathways
+====================================================
+
+Date/time: 2026-09-08 08:41:22
+
+INPUT
+----------------------------------------------------
+Stage 12 integrated GSEA: C:/Users/asus/Desktop/TNBC_BRCA1_SingleCell/results/12_GSEA_Integration/tables/main/GSEA_Integrated_significant.csv
+Significant input criterion: p.adjust < 0.05
+
+SELECTION STRATEGY
+----------------------------------------------------
+Exact duplicate descriptions were removed.
+Rule-based biological redundancy groups were assigned.
+One representative term was retained per redundancy group.
+A maximum of 10 representative terms was retained per direction.
+BRCA1_tumour and TotalCell were evaluated separately.
+
+RESULTS
+----------------------------------------------------
+Significant input terms: 375
+Distinct redundancy groups: 268
+Representative terms overall: 20
+Representative BRCA1_tumour terms: 10
+Representative TotalCell terms: 10
+
+QUALITY CONTROL
+----------------------------------------------------
+No duplicate redundancy groups: PASSED
+Maximum 10 terms per direction: PASSED
+Correct NES direction: PASSED
+No missing redundancy groups: PASSED
+Both enrichment directions represented: PASSED
+Output validation: PASSED
+
+INTERPRETATION
+----------------------------------------------------
+NES > 0 = enrichment toward BRCA1_tumour
+NES < 0 = enrichment toward TotalCell
+Representative pathways summarize major biological themes
+rather than listing every significant enrichment term.
+
+STAGE 13 COMPLETED SUCCESSFULLY.
+====================================================

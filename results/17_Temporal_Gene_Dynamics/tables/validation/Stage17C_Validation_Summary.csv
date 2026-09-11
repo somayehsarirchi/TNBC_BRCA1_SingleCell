@@ -1,0 +1,13 @@
+"Metric","Value"
+"Stage17B strong temporal genes",569
+"Strong temporal genes in expression",569
+"Synchronized cells",6735
+"Pseudotime bins",20
+"Genes characterized",569
+"Selected K",2
+"Selected mean silhouette",0.621142738471237
+"Cluster 1 gene count",53
+"Cluster 2 gene count",516
+"Maximum centroid validation difference",0
+"Validation checks passed",20
+"Validation checks total",20

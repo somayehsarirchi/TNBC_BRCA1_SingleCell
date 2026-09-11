@@ -1,0 +1,21 @@
+"Check","Passed"
+"Stage17B object exists",TRUE
+"Stage17B schema complete",TRUE
+"Stage17B upstream frozen",TRUE
+"Trajectory reconstruction disabled",TRUE
+"Root selection disabled",TRUE
+"Pseudotime recalculation disabled",TRUE
+"Expected strong temporal gene count = 569",TRUE
+"Z-score matrix has 569 genes",TRUE
+"Z-score matrix has 20 bins",TRUE
+"Mean expression matrix has 569 genes",TRUE
+"Mean expression matrix has 20 bins",TRUE
+"Cluster centroid matrix has 2 clusters",TRUE
+"Cluster centroid matrix has 20 bins",TRUE
+"All 569 genes assigned to a cluster",TRUE
+"No duplicate gene identifiers",TRUE
+"Stored clusters match k-means clusters",TRUE
+"Cluster assignments match stored clusters",TRUE
+"Centroids successfully validated",TRUE
+"Pseudotime cells = 6735",TRUE
+"Pseudotime bins = 20",TRUE

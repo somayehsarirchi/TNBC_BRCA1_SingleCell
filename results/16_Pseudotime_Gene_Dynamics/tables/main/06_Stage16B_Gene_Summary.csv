@@ -1,0 +1,6 @@
+"Parameter","Value"
+"Total_genes_tested",24865
+"Significant_qvalue_lt_0.05",14356
+"Strong_MoransI_ge_0.10",2908
+"Top100_available",100
+"Top50_available",50
