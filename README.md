@@ -32,6 +32,23 @@ The repository is intended as a computational research resource for reproducible
 
 ---
 
+## Representative Results
+
+The figures below provide a visual overview of the analysis, from cell-type organization and inferred CNV state to predicted cell–cell communication and trajectory structure. Click a figure to open the corresponding high-resolution PDF.
+
+<table>
+<tr>
+<td align="center"><a href="results/04_CellType_Annotation/figures/main/UMAP_Manual_CellTypes_Split.pdf"><img src="docs/figures/UMAP_Manual_CellTypes_Split.png" width="400" alt="UMAP of manually annotated cell types"></a><br><strong>Cell-type landscape</strong></td>
+<td align="center"><a href="results/08_CopyKAT_Integration/figures/main/CopyKAT_CNV_Status_UMAP.pdf"><img src="docs/figures/CopyKAT_CNV_Status_UMAP.png" width="400" alt="CopyKAT CNV status UMAP"></a><br><strong>Inferred CNV state</strong></td>
+</tr>
+<tr>
+<td align="center"><a href="results/14_CellChat/figures/main/CellChat_Overall_Network_Weight.pdf"><img src="docs/figures/CellChat_Overall_Network_Weight.png" width="400" alt="CellChat overall communication network by interaction weight"></a><br><strong>Predicted cell–cell communication</strong></td>
+<td align="center"><a href="results/15_Monocle3_Trajectory/figures/main/Trajectory_Pseudotime_Final.pdf"><img src="docs/figures/Trajectory_Pseudotime_Final.png" width="400" alt="Monocle3 trajectory and pseudotime"></a><br><strong>Trajectory and pseudotime structure</strong></td>
+</tr>
+</table>
+
+---
+
 # Scientific Motivation
 
 TNBC is characterized by substantial cellular and molecular heterogeneity. Single-cell analysis provides an opportunity to examine this heterogeneity at multiple levels, including:
