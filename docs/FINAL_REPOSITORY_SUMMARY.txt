@@ -2,11 +2,11 @@
 FINAL REPOSITORY CREATION SUMMARY
 ============================================================
 
-Original project: C:/Users/asus/Desktop/TNBC_SingleCell_Pipeline
+Original project: archived local analysis project (not included in the public repository)
 
 Original project exists: TRUE
 
-GitHub repository: C:/Users/asus/Desktop/TNBC_BRCA1_SingleCell
+GitHub repository: TNBC_BRCA1_SingleCell
 
 GitHub repository exists: TRUE
 
