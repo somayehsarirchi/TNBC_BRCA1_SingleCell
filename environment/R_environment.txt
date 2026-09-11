@@ -1,0 +1,50 @@
+TNBC BRCA1 Single-Cell Analysis
+R Environment Specification
+================================
+
+Recorded: 2026-09-11
+
+R version: 4.5.2 (2025-10-31 ucrt)
+Bioconductor version: 3.22
+
+This file documents the key analysis-relevant R package versions
+verified in the active analysis environment.
+It is an environment record, not a complete dependency lockfile.
+Transitive dependencies are therefore not frozen here.
+
+Package versions
+----------------
+CellChat 1.6.1
+celldex 1.20.0
+clusterProfiler 4.18.4
+copykat 1.1.0
+DESeq2 1.50.2
+dplyr 1.2.1
+edgeR 4.8.2
+enrichplot 1.30.5
+future 1.70.0
+ggplot2 4.0.3
+ggrepel 0.9.8
+igraph 2.3.1
+KEGGREST 1.50.0
+Matrix 1.7.6
+matrixStats 1.5.0
+monocle3 1.4.27
+msigdbr 26.1.1
+org.Hs.eg.db 3.22.0
+patchwork 1.3.2
+ReactomePA 1.54.0
+readr 2.2.0
+Seurat 5.5.0
+SingleCellExperiment 1.32.0
+SingleR 2.12.0
+stringr 1.6.0
+survival 3.8.6
+tibble 3.3.1
+tidyr 1.3.2
+
+Reproducibility note
+--------------------
+Package versions reflect the environment used for the current
+analysis workflow. Large computational objects and raw data are
+not included in the public repository.
