@@ -3,7 +3,8 @@
 [![DOI](https://zenodo.org/badge/DOI/10.5281/zenodo.22723081.svg)](https://doi.org/10.5281/zenodo.22723081)\
 ![R](https://img.shields.io/badge/R-%3E%3D4.5-blue)\
 ![Status](https://img.shields.io/badge/status-reproducible-success)\
-![Validation](https://img.shields.io/badge/validation-QC%20%2B%20multi--stage%20analysis-orange)
+![Validation](https://img.shields.io/badge/validation-QC%20%2B%20multi--stage%20analysis-orange)\
+![License](https://img.shields.io/badge/license-MIT-green)
 ## Overview
 
 This repository contains a reproducible, stage-organized single-cell RNA-sequencing (scRNA-seq) workflow for characterizing cellular composition, epithelial heterogeneity, inferred copy-number states, differential transcriptional programs, pathway enrichment, cell–cell communication, trajectory structure, pseudotime-associated genes, and temporal gene-expression programs in triple-negative breast cancer (TNBC).
