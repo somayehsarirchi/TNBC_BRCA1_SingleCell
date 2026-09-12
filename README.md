@@ -1690,7 +1690,10 @@ Cancer Bioinformatics & Single-Cell Genomics
 
 # License
 
-License information will be added once the repository licensing decision has been finalized.
+This project is licensed under the MIT License. See the `LICENSE` file for details.
+
+The repository contains analysis code, documentation, metadata, and derived computational outputs. 
+The original public datasets remain subject to the terms and conditions of their respective data repositories and sources.
 
 ---
 
