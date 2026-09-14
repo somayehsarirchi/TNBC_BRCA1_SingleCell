@@ -1,319 +1,476 @@
-############################################################
-# TNBC Single-cell RNA-seq Analysis Pipeline
-# Step 1: Data Loading and Quality Control
-#
-# Dataset:
-# Single-cell RNA-seq of TNBC tumors and BRCA1-mutant tumors
-#
-# This script:
-# - Loads 10X Genomics matrices
-# - Creates Seurat objects
-# - Merges samples
-# - Performs basic QC filtering
-#
-# NOTE:
-# This script is preserved as the Stage 1 analytical source code.
-# Current repository organization reflects the finalized project
-# structure. No new analysis is performed during repository
-# reorganization.
-############################################################
+# ============================================================
+# Stage 01 — Data Loading and Quality Control
+# TNBC / BRCA1 Single-Cell RNA-seq Analysis
+# ============================================================
 
-
-############################################################
-# Load libraries
-############################################################
+# ------------------------------------------------------------
+# 1. Packages
+# ------------------------------------------------------------
 
 library(Seurat)
 library(ggplot2)
-library(dplyr)
+library(patchwork)
 
+# ------------------------------------------------------------
+# 2. Project directories
+# ------------------------------------------------------------
 
-############################################################
-# Project directories
-############################################################
-
-# Canonical project repository
 project_dir <- "YOUR_PROJECT_DIRECTORY"
 
-# Raw 10X input data
 data_dir <- file.path(
   project_dir,
-  "data",
-  "raw_10X"
-)
+  "data")
 
-# Central object directory
-objects_dir <- file.path(
-  project_dir,
-  "objects"
-)
-
-# Canonical Stage 1 results directory
-stage_results_dir <- file.path(
+results_dir <- file.path(
   project_dir,
   "results",
   "01_Data_Loading_QC"
 )
 
-# Stage 1 subdirectories
-figures_main_dir <- file.path(
-  stage_results_dir,
+figures_dir <- file.path(
+  results_dir,
   "figures",
   "main"
 )
 
 logs_dir <- file.path(
-  stage_results_dir,
+  results_dir,
   "logs"
 )
 
-# Create canonical directories if required
-dir.create(
-  objects_dir,
-  recursive = TRUE,
-  showWarnings = FALSE
+objects_dir <- file.path(
+  project_dir,
+  "objects"
 )
 
-dir.create(
-  figures_main_dir,
-  recursive = TRUE,
-  showWarnings = FALSE
-)
+dir.create(figures_dir, recursive = TRUE, showWarnings = FALSE)
+dir.create(logs_dir, recursive = TRUE, showWarnings = FALSE)
+dir.create(objects_dir, recursive = TRUE, showWarnings = FALSE)
 
-dir.create(
-  logs_dir,
-  recursive = TRUE,
-  showWarnings = FALSE
-)
-
-
-############################################################
-# Stage 1 log
-############################################################
+# ------------------------------------------------------------
+# 3. Logging
+# ------------------------------------------------------------
 
 log_file <- file.path(
   logs_dir,
   "Step1_QC.log"
 )
 
-sink(
-  log_file,
-  append = TRUE,
-  split = TRUE
+sink(log_file, split = TRUE)
+
+cat("============================================================\n")
+cat("Stage 01 — Data Loading and Quality Control\n")
+cat("Started:", as.character(Sys.time()), "\n")
+cat("Project directory:", project_dir, "\n")
+cat("============================================================\n\n")
+
+# ------------------------------------------------------------
+# 4. Sample information
+# ------------------------------------------------------------
+
+sample_ids <- c(
+  "GSM4909281",
+  "GSM4909282",
+  "GSM4909283",
+  "GSM4909284",
+  "GSM4909285",
+  "GSM4909286",
+  "GSM4909287",
+  "GSM4909288"
+)
+
+group_labels <- c(
+  rep("TotalCell", 4),
+  rep("BRCA1_tumour", 4)
+)
+
+names(group_labels) <- sample_ids
+
+cat("Sample groups:\n")
+
+print(
+  data.frame(
+    sample = sample_ids,
+    group = group_labels
+  )
 )
 
 cat("\n")
-cat("============================================================\n")
-cat("STAGE 1 — DATA LOADING AND QUALITY CONTROL\n")
-cat("============================================================\n")
-cat("Project directory:\n")
-cat(project_dir, "\n\n")
 
+# ------------------------------------------------------------
+# 5. Read each sample independently
+# ------------------------------------------------------------
 
-############################################################
-# Define samples
-############################################################
+cat("------------------------------------------------------------\n")
+cat("Reading individual samples\n")
+cat("------------------------------------------------------------\n")
 
-samples <- c(
-  GSM4909281 = "Total1",
-  GSM4909282 = "Total2",
-  GSM4909283 = "Total3",
-  GSM4909284 = "Total4",
-  GSM4909285 = "BRCA1_1",
-  GSM4909286 = "BRCA1_2",
-  GSM4909287 = "BRCA1_3",
-  GSM4909288 = "BRCA1_4"
-)
+seurat_objects <- list()
 
-
-############################################################
-# Create Seurat objects from 10X matrices
-############################################################
-
-obj_list <- lapply(
-  names(samples),
-  function(sample_id) {
-    
-    sample_path <- file.path(
-      data_dir,
+for (sample_id in sample_ids) {
+  
+  sample_dir <- file.path(
+    data_dir,
+    sample_id,
+    "10X"
+  )
+  
+  cat("\nSample:", sample_id, "\n")
+  cat("Directory:", sample_dir, "\n")
+  
+  if (!dir.exists(sample_dir)) {
+    stop(
+      "10X directory not found for ",
       sample_id,
-      "10X"
+      ": ",
+      sample_dir
     )
-    
-    counts <- Read10X(sample_path)
-    
-    obj <- CreateSeuratObject(
-      counts = counts,
-      project = sample_id,
-      min.cells = 3,
-      min.features = 200
-    )
-    
-    # Store sample metadata
-    obj$sample <- sample_id
-    
-    # Define biological groups
-    obj$group <- ifelse(
-      grepl("GSM490928[1-4]", sample_id),
-      "TotalCell",
-      "BRCA1_tumour"
-    )
-    
-    return(obj)
   }
-)
-
-names(obj_list) <- names(samples)
-
-
-############################################################
-# Merge all samples
-############################################################
-
-tnbc_obj <- merge(
-  obj_list[[1]],
-  y = obj_list[-1],
-  add.cell.ids = samples
-)
-
-
-############################################################
-# Join RNA layers
-#
-# Seurat v5 compatibility
-############################################################
-
-tnbc_obj <- JoinLayers(
-  tnbc_obj,
-  assay = "RNA"
-)
-
-
-############################################################
-# Quality control metrics
-############################################################
-
-tnbc_obj[["percent.mt"]] <-
-  PercentageFeatureSet(
-    tnbc_obj,
-    pattern = "^MT-"
+  
+  counts <- Read10X(
+    data.dir = sample_dir
   )
-
-
-############################################################
-# QC visualization
-#
-# Canonical Stage 1 figure locations:
-#
-# results/01_Data_Loading_QC/figures/main/
-#
-# Current finalized outputs:
-# - QC_violin_BRCA1_tumour.pdf
-# - QC_violin_TotalCell.pdf
-#
-# The analytical content of the QC plots is unchanged.
-############################################################
-
-# BRCA1_tumour QC plot
-pdf(
-  file.path(
-    figures_main_dir,
-    "QC_violin_BRCA1_tumour.pdf"
+  
+  obj <- CreateSeuratObject(
+    counts = counts,
+    project = sample_id,
+    min.cells = 3,
+    min.features = 200
   )
-)
+  
+  obj$sample <- sample_id
+  obj$group <- group_labels[[sample_id]]
+  
+  seurat_objects[[sample_id]] <- obj
+  
+  cat(
+    "Cells:", ncol(obj),
+    "| Genes:", nrow(obj),
+    "| Group:", group_labels[[sample_id]],
+    "\n"
+  )
+}
 
-VlnPlot(
-  subset(
-    tnbc_obj,
-    subset = group == "BRCA1_tumour"
+cat("\nAll samples loaded successfully.\n\n")
+
+# ------------------------------------------------------------
+# 6. Merge samples within each biological group
+# ------------------------------------------------------------
+
+cat("------------------------------------------------------------\n")
+cat("Merging samples within biological groups\n")
+cat("------------------------------------------------------------\n")
+
+# TotalCell
+
+TotalCell <- merge(
+  seurat_objects[["GSM4909281"]],
+  y = list(
+    seurat_objects[["GSM4909282"]],
+    seurat_objects[["GSM4909283"]],
+    seurat_objects[["GSM4909284"]]
   ),
+  add.cell.ids = c(
+    "GSM4909281",
+    "GSM4909282",
+    "GSM4909283",
+    "GSM4909284"
+  ),
+  project = "TotalCell"
+)
+
+# BRCA1 tumour
+
+BRCA1tumour <- merge(
+  seurat_objects[["GSM4909285"]],
+  y = list(
+    seurat_objects[["GSM4909286"]],
+    seurat_objects[["GSM4909287"]],
+    seurat_objects[["GSM4909288"]]
+  ),
+  add.cell.ids = c(
+    "GSM4909285",
+    "GSM4909286",
+    "GSM4909287",
+    "GSM4909288"
+  ),
+  project = "BRCA1tumour"
+)
+
+cat("TotalCell cells:", ncol(TotalCell), "\n")
+cat("BRCA1tumour cells:", ncol(BRCA1tumour), "\n\n")
+
+# ------------------------------------------------------------
+# 7. Calculate mitochondrial percentage separately
+# ------------------------------------------------------------
+
+cat("------------------------------------------------------------\n")
+cat("Calculating mitochondrial percentages\n")
+cat("------------------------------------------------------------\n")
+
+TotalCell[["percent.mt"]] <- PercentageFeatureSet(
+  TotalCell,
+  pattern = "^MT-"
+)
+
+BRCA1tumour[["percent.mt"]] <- PercentageFeatureSet(
+  BRCA1tumour,
+  pattern = "^MT-"
+)
+
+cat("Mitochondrial QC metrics calculated.\n\n")
+
+# ------------------------------------------------------------
+# 8. Pre-QC violin plots
+# ------------------------------------------------------------
+
+cat("------------------------------------------------------------\n")
+cat("Generating pre-QC violin plots\n")
+cat("------------------------------------------------------------\n")
+
+p_TotalCell <- VlnPlot(
+  TotalCell,
   features = c(
     "nFeature_RNA",
     "nCount_RNA",
     "percent.mt"
   ),
-  ncol = 3
+  group.by = "sample",
+  ncol = 3,
+  pt.size = 0
 )
 
-dev.off()
-
-
-# TotalCell QC plot
-pdf(
-  file.path(
-    figures_main_dir,
-    "QC_violin_TotalCell.pdf"
+p_TotalCell <- p_TotalCell +
+  plot_annotation(
+    title = "TotalCell — Pre-QC distributions"
   )
+
+ggsave(
+  filename = file.path(
+    figures_dir,
+    "QC_violin_TotalCell_preQC.pdf"
+  ),
+  plot = p_TotalCell,
+  width = 12,
+  height = 5
 )
 
-VlnPlot(
-  subset(
-    tnbc_obj,
-    subset = group == "TotalCell"
-  ),
+p_BRCA1 <- VlnPlot(
+  BRCA1tumour,
   features = c(
     "nFeature_RNA",
     "nCount_RNA",
     "percent.mt"
   ),
-  ncol = 3
+  group.by = "sample",
+  ncol = 3,
+  pt.size = 0
 )
 
-dev.off()
+p_BRCA1 <- p_BRCA1 +
+  plot_annotation(
+    title = "BRCA1 tumour — Pre-QC distributions"
+  )
 
+ggsave(
+  filename = file.path(
+    figures_dir,
+    "QC_violin_BRCA1_tumour_preQC.pdf"
+  ),
+  plot = p_BRCA1,
+  width = 12,
+  height = 5
+)
 
-############################################################
-# Filtering low-quality cells
-############################################################
+cat("Pre-QC plots saved.\n\n")
 
-tnbc_obj <- subset(
-  tnbc_obj,
+# ------------------------------------------------------------
+# 9. QC thresholds
+#
+# These values are provisional and should be reviewed
+# after inspecting the pre-QC distributions.
+# ------------------------------------------------------------
+
+# TotalCell
+
+TotalCell_min_features <- 200
+TotalCell_max_features <- 5000
+TotalCell_max_counts <- 40000
+TotalCell_max_mt <- 20
+
+# BRCA1 tumour
+
+BRCA1_min_features <- 200
+BRCA1_max_features <- 5000
+BRCA1_max_counts <- 40000
+BRCA1_max_mt <- 20
+
+# ------------------------------------------------------------
+# 10. Cell counts before QC
+# ------------------------------------------------------------
+
+cat("------------------------------------------------------------\n")
+cat("Cell counts before QC\n")
+cat("------------------------------------------------------------\n")
+
+cat("\nTotalCell:\n")
+print(table(TotalCell$sample))
+
+cat("\nBRCA1tumour:\n")
+print(table(BRCA1tumour$sample))
+
+# ------------------------------------------------------------
+# 11. Apply QC filters
+# ------------------------------------------------------------
+
+cat("\n------------------------------------------------------------\n")
+cat("Applying QC filters\n")
+cat("------------------------------------------------------------\n")
+
+TotalCell_QC_filtered <- subset(
+  TotalCell,
   subset =
-    nFeature_RNA > 200 &
-    nFeature_RNA < 5000 &
-    nCount_RNA < 40000 &
-    percent.mt < 20
+    nFeature_RNA > TotalCell_min_features &
+    nFeature_RNA < TotalCell_max_features &
+    nCount_RNA < TotalCell_max_counts &
+    percent.mt < TotalCell_max_mt
 )
 
+BRCA1tumour_QC_filtered <- subset(
+  BRCA1tumour,
+  subset =
+    nFeature_RNA > BRCA1_min_features &
+    nFeature_RNA < BRCA1_max_features &
+    nCount_RNA < BRCA1_max_counts &
+    percent.mt < BRCA1_max_mt
+)
 
-############################################################
-# Save filtered Seurat object
-#
-# Central project object directory:
-# objects/
-############################################################
+# ------------------------------------------------------------
+# 12. Join layers after filtering
+# ------------------------------------------------------------
+
+TotalCell_QC_filtered <- JoinLayers(
+  TotalCell_QC_filtered
+)
+
+BRCA1tumour_QC_filtered <- JoinLayers(
+  BRCA1tumour_QC_filtered
+)
+
+# ------------------------------------------------------------
+# 13. Cell counts after QC
+# ------------------------------------------------------------
+
+cat("\n------------------------------------------------------------\n")
+cat("Cell counts after QC\n")
+cat("------------------------------------------------------------\n")
+
+cat("\nTotalCell:\n")
+print(table(TotalCell_QC_filtered$sample))
+
+cat("\nBRCA1tumour:\n")
+print(table(BRCA1tumour_QC_filtered$sample))
+
+cat("\nTotalCell cells before QC:",
+    ncol(TotalCell), "\n")
+
+cat("TotalCell cells after QC:",
+    ncol(TotalCell_QC_filtered), "\n")
+
+cat("TotalCell retained:",
+    round(
+      100 * ncol(TotalCell_QC_filtered) / ncol(TotalCell),
+      2
+    ),
+    "%\n")
+
+cat("\nBRCA1tumour cells before QC:",
+    ncol(BRCA1tumour), "\n")
+
+cat("BRCA1tumour cells after QC:",
+    ncol(BRCA1tumour_QC_filtered), "\n")
+
+cat("BRCA1tumour retained:",
+    round(
+      100 * ncol(BRCA1tumour_QC_filtered) /
+        ncol(BRCA1tumour),
+      2
+    ),
+    "%\n")
+
+# ------------------------------------------------------------
+# 14. Save filtered Seurat objects
+# ------------------------------------------------------------
+
+cat("\n------------------------------------------------------------\n")
+cat("Saving filtered Seurat objects\n")
+cat("------------------------------------------------------------\n")
 
 saveRDS(
-  tnbc_obj,
+  TotalCell_QC_filtered,
   file = file.path(
     objects_dir,
-    "TNBC_QC_filtered.rds"
+    "TotalCell_QC_filtered.rds"
   )
 )
 
+saveRDS(
+  BRCA1tumour_QC_filtered,
+  file = file.path(
+    objects_dir,
+    "BRCA1tumour_QC_filtered.rds"
+  )
+)
 
-############################################################
-# Completion log
-############################################################
-
-cat("\n")
-cat("STAGE 1 COMPLETED\n")
-cat("============================================================\n")
-cat("Samples loaded:", length(samples), "\n")
-cat("Final cells:", ncol(tnbc_obj), "\n")
-cat("Final genes:", nrow(tnbc_obj), "\n")
-cat("Filtered Seurat object:\n")
+cat("Saved:\n")
 cat(
   file.path(
     objects_dir,
-    "TNBC_QC_filtered.rds"
+    "TotalCell_QC_filtered.rds"
   ),
   "\n"
 )
 
-cat("\n")
-cat("Canonical Stage 1 results:\n")
-cat(stage_results_dir, "\n")
+cat(
+  file.path(
+    objects_dir,
+    "BRCA1tumour_QC_filtered.rds"
+  ),
+  "\n"
+)
+
+# ------------------------------------------------------------
+# 15. Record final QC thresholds
+# ------------------------------------------------------------
+
+cat("\n------------------------------------------------------------\n")
+cat("QC thresholds used in this run\n")
+cat("------------------------------------------------------------\n")
+
+cat("\nTotalCell:\n")
+cat("nFeature_RNA >", TotalCell_min_features, "\n")
+cat("nFeature_RNA <", TotalCell_max_features, "\n")
+cat("nCount_RNA   <", TotalCell_max_counts, "\n")
+cat("percent.mt   <", TotalCell_max_mt, "\n")
+
+cat("\nBRCA1 tumour:\n")
+cat("nFeature_RNA >", BRCA1_min_features, "\n")
+cat("nFeature_RNA <", BRCA1_max_features, "\n")
+cat("nCount_RNA   <", BRCA1_max_counts, "\n")
+cat("percent.mt   <", BRCA1_max_mt, "\n")
+
+# ------------------------------------------------------------
+# 16. Session information
+# ------------------------------------------------------------
+
+cat("\n------------------------------------------------------------\n")
+cat("Session information\n")
+cat("------------------------------------------------------------\n")
+
+print(sessionInfo())
+
+cat("\n============================================================\n")
+cat("Stage 01 completed:", as.character(Sys.time()), "\n")
 cat("============================================================\n")
 
 sink()
