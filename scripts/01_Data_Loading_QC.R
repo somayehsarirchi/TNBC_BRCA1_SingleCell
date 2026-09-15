@@ -15,7 +15,7 @@ library(patchwork)
 # 2. Project directories
 # ------------------------------------------------------------
 
-project_dir <- "C:/Users/asus/Desktop/GSE161529"
+project_dir <- "YOUR_PROJECT_DIRECTORY"
 
 data_dir <- file.path(
   project_dir,
