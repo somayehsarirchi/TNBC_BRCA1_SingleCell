@@ -15,7 +15,7 @@ library(patchwork)
 # 2. Project directories
 # ------------------------------------------------------------
 
-project_dir <- "YOUR_PROJECT_DIRECTORY"
+project_dir <- "C:/Users/asus/Desktop/GSE161529"
 
 data_dir <- file.path(
   project_dir,
@@ -350,11 +350,13 @@ BRCA1tumour_QC_filtered <- subset(
 # ------------------------------------------------------------
 
 TotalCell_QC_filtered <- JoinLayers(
-  TotalCell_QC_filtered
+  TotalCell_QC_filtered,
+  assay = "RNA"
 )
 
 BRCA1tumour_QC_filtered <- JoinLayers(
-  BRCA1tumour_QC_filtered
+  BRCA1tumour_QC_filtered,
+  assay = "RNA"
 )
 
 # ------------------------------------------------------------
@@ -401,6 +403,22 @@ cat("BRCA1tumour retained:",
 # ------------------------------------------------------------
 # 14. Save filtered Seurat objects
 # ------------------------------------------------------------
+stopifnot(
+  all(TotalCell_QC_filtered$group == "TotalCell"),
+  all(BRCA1tumour_QC_filtered$group == "BRCA1_tumour")
+)
+
+cat("\nCells per sample after QC:\n")
+
+print(table(
+  TotalCell_QC_filtered$sample,
+  TotalCell_QC_filtered$group
+))
+
+print(table(
+  BRCA1tumour_QC_filtered$sample,
+  BRCA1tumour_QC_filtered$group
+))
 
 cat("\n------------------------------------------------------------\n")
 cat("Saving filtered Seurat objects\n")
@@ -474,3 +492,4 @@ cat("Stage 01 completed:", as.character(Sys.time()), "\n")
 cat("============================================================\n")
 
 sink()
+
