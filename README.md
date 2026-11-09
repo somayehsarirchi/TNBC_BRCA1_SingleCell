@@ -195,7 +195,7 @@ Cells passing the defined quality-control criteria were retained for downstream 
 
 The retained single-cell datasets were normalized and integrated to reduce technical variation between samples while preserving biologically relevant transcriptional structure.
 
-The workflow uses Seurat v5 and Harmony-based integration.
+The workflow uses Seurat v5 with its native integration method to align samples across conditions.
 
 ---
 
